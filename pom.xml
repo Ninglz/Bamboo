@@ -46,6 +46,7 @@
 
     <modules>
         <module>fiction-auth</module>
+        <module>fiction-register</module>
     </modules>
 
     <dependencies>
