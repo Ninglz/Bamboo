@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+    <artifactId>fiction</artifactId>
+    <groupId>com.ninglz</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+    <groupId>com.ninglz.fiction</groupId>
+    <artifactId>fiction-auth</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>fiction-auth</name>
+
+    <properties>
+<!--        <mybatis-starter.version>1.3.1</mybatis-starter.version>-->
+        <cola.components.version>4.0.1</cola.components.version>
+    </properties>
+
+    <modules>
+        <module>fiction-auth-client</module>
+        <module>fiction-auth-adapter</module>
+        <module>fiction-auth-app</module>
+        <module>fiction-auth-domain</module>
+        <module>fiction-auth-infrastructure</module>
+        <module>start</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--COLA Components-->
+            <dependency>
+                <groupId>com.alibaba.cola</groupId>
+                <artifactId>cola-component-domain-starter</artifactId>
+                <version>${cola.components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cola</groupId>
+                <artifactId>cola-component-exception</artifactId>
+                <version>${cola.components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cola</groupId>
+                <artifactId>cola-component-dto</artifactId>
+                <version>${cola.components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cola</groupId>
+                <artifactId>cola-component-catchlog-starter</artifactId>
+                <version>${cola.components.version}</version>
+            </dependency>
+            <!--COLA Components End-->
+
+            <!--Project modules-->
+            <dependency>
+                <groupId>com.ninglz.fiction</groupId>
+                <artifactId>fiction-auth-adapter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ninglz.fiction</groupId>
+                <artifactId>fiction-auth-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ninglz.fiction</groupId>
+                <artifactId>fiction-auth-app</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ninglz.fiction</groupId>
+                <artifactId>fiction-auth-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ninglz.fiction</groupId>
+                <artifactId>fiction-auth-infrastructure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!--Project modules End-->
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>
