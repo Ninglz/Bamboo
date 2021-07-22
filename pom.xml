@@ -4,11 +4,12 @@
 
     <groupId>com.ninglz</groupId>
     <artifactId>fiction</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${ninglz.version}</version>
     <packaging>pom</packaging>
     <description>基于DDD领域驱动开发模型的Spring Cloud Alibaba分布式小说系统</description>
 
     <properties>
+        <ninglz.version>1.0-SNAPSHOT</ninglz.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
 
@@ -17,12 +18,14 @@
         <spring-cloud-alibaba.version>2021.1</spring-cloud-alibaba.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <security.oauth.version>2.3.6.RELEASE</security.oauth.version>
+        <hutool.version>5.7.3</hutool.version>
+        <junit.version>4.11</junit.version>
 
 <!--        <maven.compiler.version>3.8.1</maven.compiler.version>-->
 <!--        <spring.checkstyle.version>0.0.28</spring.checkstyle.version>-->
 <!--        <git.commit.version>2.2.5</git.commit.version>-->
 <!--        <spring-boot-admin.version>2.4.2</spring-boot-admin.version>-->
-<!--        <hutool.version>5.7.3</hutool.version>-->
 <!--        <captcha.version>1.2.7</captcha.version>-->
 <!--        <swagger.fox.version>3.0.0</swagger.fox.version>-->
 <!--        <knife4j.version>2.0.9</knife4j.version>-->
@@ -47,6 +50,7 @@
     <modules>
         <module>fiction-auth</module>
         <module>fiction-register</module>
+        <module>fiction-common</module>
     </modules>
 
     <dependencies>
@@ -69,7 +73,18 @@
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
 
+        <!--稳定版本，替代spring security bom内置-->
+        <dependency>
+            <groupId>org.springframework.security.oauth</groupId>
+            <artifactId>spring-security-oauth2</artifactId>
+            <version>${security.oauth.version}</version>
+        </dependency>
 
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+        </dependency>
     </dependencies>
 
 
@@ -98,6 +113,12 @@
                 <version>${spring-cloud-alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.ninglz</groupId>
+                <artifactId>fiction-common-core</artifactId>
+                <version>${ninglz.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -160,6 +181,27 @@
             <id>aliyun</id>
             <name>aliyun</name>
             <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+        </repository>
+
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://packages.aliyun.com/maven/repository/2123034-release-5ACmnZ/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>rdc-snapshots</id>
+            <url>https://packages.aliyun.com/maven/repository/2123034-snapshot-bW1nSH/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
     </repositories>
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fiction-auth-infrastructure" />
+        <module name="fiction-auth-adapter" />
+        <module name="fiction-auth-domain" />
+        <module name="fiction-auth-client" />
+        <module name="fiction-auth-start" />
+        <module name="fiction-auth-app" />
+        <module name="fiction-common-core" />
+        <module name="fiction-register" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="11" />
+  </component>
+</project>

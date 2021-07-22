@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/fiction-auth/fiction-auth-adapter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fiction-auth/fiction-auth-app/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fiction-auth/fiction-auth-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fiction-auth/fiction-auth-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fiction-auth/fiction-auth-infrastructure/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fiction-auth/fiction-auth-infrastructure/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fiction-auth/fiction-auth-start/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fiction-auth/fiction-auth-start/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fiction-common/fiction-common-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fiction-common/fiction-common-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fiction-register/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fiction-register/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

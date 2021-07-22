@@ -24,15 +24,11 @@
         <module>fiction-auth-app</module>
         <module>fiction-auth-domain</module>
         <module>fiction-auth-infrastructure</module>
-        <module>start</module>
+        <module>fiction-auth-start</module>
     </modules>
 
     <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
-        </dependency>
+
     </dependencies>
 
     <dependencyManagement>
