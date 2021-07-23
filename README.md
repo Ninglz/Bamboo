@@ -1,7 +1,7 @@
 # fiction
 
 #### 介绍
-基于spring cloud alibaba 的分布式集群系统
+基于DDD领域驱动开发模型的Spring Cloud Alibaba分布式小说系统
 
 #### 软件架构
 软件架构说明
