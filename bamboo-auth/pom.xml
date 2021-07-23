@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+    <artifactId>bamboo</artifactId>
+    <groupId>com.ninglz</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+    <groupId>com.ninglz.fiction</groupId>
+    <artifactId>bamboo-auth</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>bamboo-auth</name>
+
+    <properties>
+<!--        <mybatis-starter.version>1.3.1</mybatis-starter.version>-->
+        <cola.components.version>4.0.1</cola.components.version>
+    </properties>
+
+    <modules>
+        <module>bamboo-auth-client</module>
+        <module>bamboo-auth-adapter</module>
+        <module>bamboo-auth-app</module>
+        <module>bamboo-auth-domain</module>
+        <module>bamboo-auth-infrastructure</module>
+        <module>bamboo-auth-start</module>
+    </modules>
+
+    <dependencies>
+
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--COLA Components-->
+            <dependency>
+                <groupId>com.alibaba.cola</groupId>
+                <artifactId>cola-component-domain-starter</artifactId>
+                <version>${cola.components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cola</groupId>
+                <artifactId>cola-component-exception</artifactId>
+                <version>${cola.components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cola</groupId>
+                <artifactId>cola-component-dto</artifactId>
+                <version>${cola.components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cola</groupId>
+                <artifactId>cola-component-catchlog-starter</artifactId>
+                <version>${cola.components.version}</version>
+            </dependency>
+            <!--COLA Components End-->
+
+            <!--Project modules-->
+            <dependency>
+                <groupId>com.ninglz.fiction</groupId>
+                <artifactId>bamboo-auth-adapter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ninglz.fiction</groupId>
+                <artifactId>bamboo-auth-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ninglz.fiction</groupId>
+                <artifactId>bamboo-auth-app</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ninglz.fiction</groupId>
+                <artifactId>bamboo-auth-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ninglz.fiction</groupId>
+                <artifactId>bamboo-auth-infrastructure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!--Project modules End-->
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>

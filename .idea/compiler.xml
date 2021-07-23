@@ -7,14 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="fiction-auth-infrastructure" />
-        <module name="fiction-auth-adapter" />
-        <module name="fiction-auth-domain" />
-        <module name="fiction-auth-client" />
-        <module name="fiction-auth-start" />
-        <module name="fiction-auth-app" />
-        <module name="fiction-common-core" />
-        <module name="fiction-register" />
+        <module name="bamboo-auth-client" />
+        <module name="bamboo-register" />
+        <module name="bamboo-auth-domain" />
+        <module name="bamboo-auth-adapter" />
+        <module name="bamboo-common-core" />
+        <module name="bamboo-auth-infrastructure" />
+        <module name="bamboo-auth-app" />
+        <module name="bamboo-knife4j" />
+        <module name="bamboo-auth-start" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />

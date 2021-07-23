@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ninglz</groupId>
-    <artifactId>fiction</artifactId>
+    <artifactId>bamboo</artifactId>
     <version>${ninglz.version}</version>
     <packaging>pom</packaging>
     <description>基于DDD领域驱动开发模型的Spring Cloud Alibaba分布式小说系统</description>
@@ -21,36 +21,14 @@
         <security.oauth.version>2.3.6.RELEASE</security.oauth.version>
         <hutool.version>5.7.3</hutool.version>
         <junit.version>4.11</junit.version>
+        <knife4j.version>2.0.9</knife4j.version>
 
-<!--        <maven.compiler.version>3.8.1</maven.compiler.version>-->
-<!--        <spring.checkstyle.version>0.0.28</spring.checkstyle.version>-->
-<!--        <git.commit.version>2.2.5</git.commit.version>-->
-<!--        <spring-boot-admin.version>2.4.2</spring-boot-admin.version>-->
-<!--        <captcha.version>1.2.7</captcha.version>-->
-<!--        <swagger.fox.version>3.0.0</swagger.fox.version>-->
-<!--        <knife4j.version>2.0.9</knife4j.version>-->
-<!--        <velocity.version>1.7</velocity.version>-->
-<!--        <lcn.version>4.1.0</lcn.version>-->
-<!--        <jasypt.version>3.0.3</jasypt.version>-->
-<!--        <ttl.version>2.11.4</ttl.version>-->
-<!--        <ureport.version>2.2.9</ureport.version>-->
-<!--        <aws.version>1.11.543</aws.version>-->
-<!--        <xxl.job.version>2.3.0</xxl.job.version>-->
-<!--        <activiti.version>5.22.0</activiti.version>-->
-<!--        <docker.registry>172.17.0.111</docker.registry>-->
-<!--        <docker.host>http://172.17.0.111:2375</docker.host>-->
-<!--        <docker.namespace>library</docker.namespace>-->
-<!--        <docker.username>admin</docker.username>-->
-<!--        <docker.password>Harbor12345</docker.password>-->
-<!--        <docker.plugin.version>0.33.0</docker.plugin.version>-->
-<!--        &lt;!&ndash;  默认忽略docker构建 &ndash;&gt;-->
-<!--        <docker.skip>false</docker.skip>-->
     </properties>
 
     <modules>
-        <module>fiction-auth</module>
-        <module>fiction-register</module>
-        <module>fiction-common</module>
+        <module>bamboo-auth</module>
+        <module>bamboo-register</module>
+        <module>bamboo-common</module>
     </modules>
 
     <dependencies>
@@ -59,6 +37,17 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
+        </dependency>
+        <!--新版本使用bootstrap.yml需要使用此依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
+        <!--配置文件处理器-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
         </dependency>
         <!--测试依赖-->
         <dependency>
@@ -117,7 +106,7 @@
 
             <dependency>
                 <groupId>com.ninglz</groupId>
-                <artifactId>fiction-common-core</artifactId>
+                <artifactId>bamboo-common-core</artifactId>
                 <version>${ninglz.version}</version>
             </dependency>
         </dependencies>
