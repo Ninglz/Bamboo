@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -27,39 +30,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab8a3014-e6a4-4917-a23b-c7bb4247e42a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fiction-auth/fiction-auth-adapter/src/main/java/com/ninglz/fiction/web/TokenEndpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fiction-common/fiction-common-core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fiction-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/enums/NamespaceTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/security/nacos/LdapAuthenticationProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-adapter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-auth/fiction-auth-adapter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/start/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-auth/fiction-auth-start/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/start/src/main/java/com/ninglz/fiction/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-auth/fiction-auth-start/src/main/java/com/ninglz/fiction/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/start/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-auth/fiction-auth-start/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/start/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-auth/fiction-auth-start/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/start/src/test/java/com/ninglz/fiction/TestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-auth/fiction-auth-start/src/test/java/com/ninglz/fiction/TestApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/start/src/test/java/com/ninglz/fiction/test/CustomerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-auth/fiction-auth-start/src/test/java/com/ninglz/fiction/test/CustomerServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/start/src/test/resources/logback-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-auth/fiction-auth-start/src/test/resources/logback-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/start/src/test/resources/test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-auth/fiction-auth-start/src/test/resources/test.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-register/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/Nacos.java" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/Nacos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/controller/HealthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/controller/HealthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/controller/NamespaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/controller/NamespaceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/controller/PermissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/controller/PermissionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/controller/ServerStateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/controller/ServerStateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/filter/JwtAuthenticationTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/filter/JwtAuthenticationTokenFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/model/Namespace.java" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/model/Namespace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/security/nacos/NacosAuthConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/security/nacos/NacosAuthConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/security/nacos/NacosAuthManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/security/nacos/NacosAuthManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/security/nacos/roles/NacosRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/security/nacos/roles/NacosRoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/META-INF/nacos-default.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-register/src/main/resources/META-INF/nacos-default.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-register/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-register/src/main/resources/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/fiction-register/src/main/resources/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fiction-common/fiction-common-core/src/main/java/com/ninglz/fiction/common/core/util/StatusResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,15 +63,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.6.3" />
+        <option name="mavenHome" value="$USER_HOME$/apache-maven-3.6.3" />
         <option name="userSettingsFile" value="D:\workspace\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
-    </option>
-    <option name="enabledProfiles">
-      <list>
-        <option value="ali" />
-        <option value="dev" />
-      </list>
     </option>
   </component>
   <component name="ProjectId" id="1vd0KCZEcR0ExpqhcQc1KvqxzM5" />
@@ -117,7 +85,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -125,6 +93,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Nacos" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="fiction-register" />
       <extension name="coverage">
@@ -208,79 +187,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目初始化" />
     <option name="LAST_COMMIT_MESSAGE" value="项目初始化" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="184" y="121" key="#Project_Structure" timestamp="1626958416649">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="184" y="121" key="#Project_Structure/0.0.2048.1112@0.0.2048.1112" timestamp="1626958416649" />
-    <state x="501" y="250" key="#com.intellij.ide.util.MemberChooser" timestamp="1626954877186">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="501" y="250" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1626954877186" />
-    <state x="479" y="25" key="CommitChangelistDialog2" timestamp="1626879985826">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="479" y="25" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1626879985826" />
-    <state x="236" y="433" key="FileChooserDialogImpl" timestamp="1626959404421">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="236" y="433" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1626959404421" />
-    <state width="1372" height="371" key="GridCell.Tab.0.bottom" timestamp="1626961768267">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="1372" height="371" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1626961768267" />
-    <state width="1372" height="371" key="GridCell.Tab.0.center" timestamp="1626961768267">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="1372" height="371" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1626961768267" />
-    <state width="1372" height="371" key="GridCell.Tab.0.left" timestamp="1626961768267">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="1372" height="371" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1626961768267" />
-    <state width="1372" height="371" key="GridCell.Tab.0.right" timestamp="1626961768267">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="1372" height="371" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1626961768267" />
-    <state width="1372" height="371" key="GridCell.Tab.1.bottom" timestamp="1626961768268">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="1372" height="371" key="GridCell.Tab.1.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1626961768268" />
-    <state width="1372" height="371" key="GridCell.Tab.1.center" timestamp="1626961768267">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="1372" height="371" key="GridCell.Tab.1.center/0.0.2048.1112@0.0.2048.1112" timestamp="1626961768267" />
-    <state width="1372" height="371" key="GridCell.Tab.1.left" timestamp="1626961768267">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="1372" height="371" key="GridCell.Tab.1.left/0.0.2048.1112@0.0.2048.1112" timestamp="1626961768267" />
-    <state width="1372" height="371" key="GridCell.Tab.1.right" timestamp="1626961768267">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="1372" height="371" key="GridCell.Tab.1.right/0.0.2048.1112@0.0.2048.1112" timestamp="1626961768267" />
-    <state x="226" y="202" key="Maven.ArtifactSearchDialog" timestamp="1626955045465">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="226" y="202" key="Maven.ArtifactSearchDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1626955045465" />
-    <state x="246" y="189" key="SettingsEditor" timestamp="1626959438644">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="246" y="189" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1626959438644" />
-    <state x="547" y="273" key="Vcs.Push.Dialog.v2" timestamp="1626880292902">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="547" y="273" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1626880292902" />
-    <state width="511" height="360" key="documentation.popup.size" timestamp="1626877297542">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="511" height="360" key="documentation.popup.size/0.0.2048.1112@0.0.2048.1112" timestamp="1626877297542" />
-    <state x="342" y="133" key="new project wizard" timestamp="1626962784704">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="342" y="133" key="new project wizard/0.0.2048.1112@0.0.2048.1112" timestamp="1626962784704" />
-    <state x="770" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1626955092395">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="770" y="259" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1626955092395" />
   </component>
 </project>
