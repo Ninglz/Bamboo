@@ -7,17 +7,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="bamboo-auth-client" />
+        <module name="bamboo-gateway" />
         <module name="bamboo-register" />
+        <module name="bamboo-upms-start" />
         <module name="bamboo-auth-domain" />
+        <module name="bamboo-upms-client" />
         <module name="bamboo-auth-adapter" />
-        <module name="bamboo-common-core" />
-        <module name="bamboo-auth-infrastructure" />
+        <module name="bamboo-upms-infrastructure" />
         <module name="bamboo-auth-app" />
-        <module name="bamboo-knife4j" />
+        <module name="bamboo-auth-client" />
+        <module name="bamboo-common-core" />
+        <module name="bamboo-upms-app" />
+        <module name="bamboo-upms-adapter" />
         <module name="bamboo-auth-start" />
+        <module name="bamboo-upms-domain" />
+        <module name="bamboo-auth-infrastructure" />
+        <module name="bamboo-knife" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="11">
+      <module name="untitled" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>bamboo</artifactId>
+        <groupId>com.ninglz</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>bamboo-upms</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>bamboo-upms</name>
+
+
+    <modules>
+        <module>bamboo-upms-client</module>
+        <module>bamboo-upms-adapter</module>
+        <module>bamboo-upms-app</module>
+        <module>bamboo-upms-domain</module>
+        <module>bamboo-upms-infrastructure</module>
+        <module>bamboo-upms-start</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!--Project modules-->
+            <dependency>
+                <groupId>com.ninglz</groupId>
+                <artifactId>bamboo-upms-adapter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ninglz</groupId>
+                <artifactId>bamboo-upms-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ninglz</groupId>
+                <artifactId>bamboo-upms-app</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ninglz</groupId>
+                <artifactId>bamboo-upms-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ninglz</groupId>
+                <artifactId>bamboo-upms-infrastructure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!--Project modules End-->
+        </dependencies>
+    </dependencyManagement>
+
+</project>

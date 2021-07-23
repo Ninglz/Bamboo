@@ -21,10 +21,7 @@
             <groupId>com.ninglz.fiction</groupId>
             <artifactId>bamboo-auth-infrastructure</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.alibaba.cola</groupId>
-            <artifactId>cola-component-catchlog-starter</artifactId>
-        </dependency>
+
 
     </dependencies>
 

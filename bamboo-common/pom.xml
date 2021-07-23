@@ -14,7 +14,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>bamboo-common-core</module>
-        <module>bamboo-knife4j</module>
+        <module>bamboo-knife</module>
     </modules>
 
 

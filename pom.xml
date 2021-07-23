@@ -22,6 +22,7 @@
         <hutool.version>5.7.3</hutool.version>
         <junit.version>4.11</junit.version>
         <knife4j.version>2.0.9</knife4j.version>
+        <cola.components.version>4.0.1</cola.components.version>
 
     </properties>
 
@@ -29,6 +30,8 @@
         <module>bamboo-auth</module>
         <module>bamboo-register</module>
         <module>bamboo-common</module>
+        <module>bamboo-gateway</module>
+        <module>bamboo-upms</module>
     </modules>
 
     <dependencies>
@@ -69,6 +72,34 @@
             <version>${security.oauth.version}</version>
         </dependency>
 
+        <!-- 热部署 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- COLA components -->
+        <dependency>
+            <groupId>com.alibaba.cola</groupId>
+            <artifactId>cola-component-domain-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cola</groupId>
+            <artifactId>cola-component-exception</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cola</groupId>
+            <artifactId>cola-component-catchlog-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cola</groupId>
+            <artifactId>cola-component-dto</artifactId>
+        </dependency>
+        <!-- COLA components End-->
+
+
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -103,6 +134,29 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <!--COLA Components-->
+            <dependency>
+                <groupId>com.alibaba.cola</groupId>
+                <artifactId>cola-component-domain-starter</artifactId>
+                <version>${cola.components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cola</groupId>
+                <artifactId>cola-component-exception</artifactId>
+                <version>${cola.components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cola</groupId>
+                <artifactId>cola-component-dto</artifactId>
+                <version>${cola.components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cola</groupId>
+                <artifactId>cola-component-catchlog-starter</artifactId>
+                <version>${cola.components.version}</version>
+            </dependency>
+            <!--COLA Components End-->
 
             <dependency>
                 <groupId>com.ninglz</groupId>

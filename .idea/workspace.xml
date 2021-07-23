@@ -30,389 +30,119 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab8a3014-e6a4-4917-a23b-c7bb4247e42a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bamboo-common/bamboo-knife4j/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bamboo-common/bamboo-knife4j/src/main/java/com/ninglz/bamboo/commoon/knife/annotation/EnableBambooKnife.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bamboo-common/bamboo-knife4j/src/main/java/com/ninglz/bamboo/commoon/knife/config/KnifeAutoConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bamboo-common/bamboo-knife4j/src/main/java/com/ninglz/bamboo/commoon/knife/support/KnifeProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-common/bamboo-common-core/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-common/bamboo-common-core/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-common/bamboo-common-core/src/main/resources/i18n/messages_zh_CN.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-adapter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-adapter/src/main/java/com/ninglz/bamboo/mobile/CustomerMobileAdaptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-adapter/src/main/java/com/ninglz/bamboo/wap/CustomerWapAdaptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-adapter/src/main/java/com/ninglz/bamboo/web/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-app/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-app/src/main/java/com/ninglz/bamboo/customer/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-app/src/main/java/com/ninglz/bamboo/customer/executor/CustomerAddCmdExe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-app/src/main/java/com/ninglz/bamboo/customer/executor/query/CustomerListByNameQryExe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-app/src/main/java/com/ninglz/bamboo/order/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-app/src/test/java/com/ninglz/bamboo/app/CustomerConvertorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-app/src/test/java/com/ninglz/bamboo/app/CustomerValidatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-client/src/main/java/com/ninglz/bamboo/api/CustomerServiceI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-client/src/main/java/com/ninglz/bamboo/dto/CustomerAddCmd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-client/src/main/java/com/ninglz/bamboo/dto/CustomerListByNameQry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-client/src/main/java/com/ninglz/bamboo/dto/data/CustomerDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-client/src/main/java/com/ninglz/bamboo/dto/data/ErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-client/src/main/java/com/ninglz/bamboo/dto/event/CustomerCreatedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-client/src/main/java/com/ninglz/bamboo/dto/event/DomainEventConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-domain/src/main/java/com/ninglz/bamboo/domain/customer/CompanyType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-domain/src/main/java/com/ninglz/bamboo/domain/customer/Credit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-domain/src/main/java/com/ninglz/bamboo/domain/customer/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-domain/src/main/java/com/ninglz/bamboo/domain/customer/CustomerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-domain/src/main/java/com/ninglz/bamboo/domain/customer/SourceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-domain/src/main/java/com/ninglz/bamboo/domain/customer/domainservice/CreditChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-domain/src/main/java/com/ninglz/bamboo/domain/customer/gateway/CreditGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-domain/src/main/java/com/ninglz/bamboo/domain/customer/gateway/CustomerGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-domain/src/main/java/com/ninglz/bamboo/domain/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-domain/src/main/java/com/ninglz/bamboo/domain/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-domain/src/test/java/com/ninglz/bamboo/domain/CustomerEntityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-infrastructure/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-infrastructure/src/main/java/com/ninglz/bamboo/config/DiamondConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-infrastructure/src/main/java/com/ninglz/bamboo/customer/CreditGatewayImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-infrastructure/src/main/java/com/ninglz/bamboo/customer/CustomerDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-infrastructure/src/main/java/com/ninglz/bamboo/customer/CustomerGatewayImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-infrastructure/src/main/java/com/ninglz/bamboo/customer/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-infrastructure/src/main/java/com/ninglz/bamboo/order/OrderGatewayImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-infrastructure/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-infrastructure/src/main/resources/mybatis/customer-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-infrastructure/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-infrastructure/src/test/java/com/ninglz/bamboo/repository/CustomerMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-infrastructure/src/test/resources/sample.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-start/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-start/src/main/java/com/ninglz/bamboo/UpmsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-start/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-start/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-start/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-start/src/test/java/com/ninglz/bamboo/TestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-start/src/test/java/com/ninglz/bamboo/test/CustomerServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-start/src/test/resources/logback-test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/bamboo-upms-start/src/test/resources/test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bamboo-upms/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.en.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.en.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-adapter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-adapter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-adapter/src/main/java/com/ninglz/fiction/mobile/CustomerMobileAdaptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-adapter/src/main/java/com/ninglz/fiction/mobile/CustomerMobileAdaptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-adapter/src/main/java/com/ninglz/fiction/wap/CustomerWapAdaptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-adapter/src/main/java/com/ninglz/fiction/wap/CustomerWapAdaptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-adapter/src/main/java/com/ninglz/fiction/web/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-adapter/src/main/java/com/ninglz/fiction/web/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-adapter/src/main/java/com/ninglz/fiction/web/TokenEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-adapter/src/main/java/com/ninglz/fiction/web/TokenEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-app/src/main/java/com/ninglz/fiction/customer/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/src/main/java/com/ninglz/fiction/customer/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-app/src/main/java/com/ninglz/fiction/customer/executor/CustomerAddCmdExe.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/src/main/java/com/ninglz/fiction/customer/executor/CustomerAddCmdExe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-app/src/main/java/com/ninglz/fiction/customer/executor/query/CustomerListByNameQryExe.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/src/main/java/com/ninglz/fiction/customer/executor/query/CustomerListByNameQryExe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-app/src/main/java/com/ninglz/fiction/order/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/src/main/java/com/ninglz/fiction/order/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-app/src/test/java/com/ninglz/fiction/app/CustomerConvertorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/src/test/java/com/ninglz/fiction/app/CustomerConvertorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-app/src/test/java/com/ninglz/fiction/app/CustomerValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/src/test/java/com/ninglz/fiction/app/CustomerValidatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-client/src/main/java/com/ninglz/fiction/api/CustomerServiceI.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/fiction/api/CustomerServiceI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-client/src/main/java/com/ninglz/fiction/dto/CustomerAddCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/fiction/dto/CustomerAddCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-client/src/main/java/com/ninglz/fiction/dto/CustomerListByNameQry.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/fiction/dto/CustomerListByNameQry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-client/src/main/java/com/ninglz/fiction/dto/data/CustomerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/fiction/dto/data/CustomerDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-client/src/main/java/com/ninglz/fiction/dto/data/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/fiction/dto/data/ErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-client/src/main/java/com/ninglz/fiction/dto/event/CustomerCreatedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/fiction/dto/event/CustomerCreatedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-client/src/main/java/com/ninglz/fiction/dto/event/DomainEventConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/fiction/dto/event/DomainEventConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/CompanyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/CompanyType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/Credit.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/Credit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/CustomerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/CustomerType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/SourceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/SourceType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/domainservice/CreditChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/domainservice/CreditChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/gateway/CreditGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/gateway/CreditGateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/gateway/CustomerGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/gateway/CustomerGateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-domain/src/main/java/com/ninglz/fiction/domain/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-domain/src/main/java/com/ninglz/fiction/domain/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-domain/src/test/java/com/ninglz/fiction/domain/CustomerEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/test/java/com/ninglz/fiction/domain/CustomerEntityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-infrastructure/src/main/java/com/ninglz/fiction/config/DiamondConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/java/com/ninglz/fiction/config/DiamondConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-infrastructure/src/main/java/com/ninglz/fiction/customer/CreditGatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/java/com/ninglz/fiction/customer/CreditGatewayImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-infrastructure/src/main/java/com/ninglz/fiction/customer/CustomerDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/java/com/ninglz/fiction/customer/CustomerDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-infrastructure/src/main/java/com/ninglz/fiction/customer/CustomerGatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/java/com/ninglz/fiction/customer/CustomerGatewayImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-infrastructure/src/main/java/com/ninglz/fiction/customer/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/java/com/ninglz/fiction/customer/CustomerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-infrastructure/src/main/java/com/ninglz/fiction/order/OrderGatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/java/com/ninglz/fiction/order/OrderGatewayImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-infrastructure/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-infrastructure/src/main/resources/mybatis/customer-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/resources/mybatis/customer-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-infrastructure/src/main/resources/mybatis/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-infrastructure/src/test/java/com/ninglz/fiction/repository/CustomerMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/test/java/com/ninglz/fiction/repository/CustomerMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-infrastructure/src/test/resources/sample.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/test/resources/sample.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-start/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-start/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-start/src/main/java/com/ninglz/fiction/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-start/src/main/java/com/ninglz/fiction/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-start/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-start/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-start/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-start/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-start/src/test/java/com/ninglz/fiction/TestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-start/src/test/java/com/ninglz/fiction/TestApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-start/src/test/java/com/ninglz/fiction/test/CustomerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-start/src/test/java/com/ninglz/fiction/test/CustomerServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-start/src/test/resources/logback-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-start/src/test/resources/logback-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/fiction-auth-start/src/test/resources/test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-start/src/test/resources/test.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-common/fiction-common-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-common/bamboo-common-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-common/fiction-common-core/src/main/java/com/ninglz/fiction/common/core/util/StatusResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-common/bamboo-common-core/src/main/java/com/ninglz/bamboo/common/core/util/StatusResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/Nacos.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/Nacos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/config/ConsoleConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/config/ConsoleConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/controller/HealthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/controller/HealthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/controller/NamespaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/controller/NamespaceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/controller/PermissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/controller/PermissionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/controller/ServerStateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/controller/ServerStateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/enums/NamespaceTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/enums/NamespaceTypeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/exception/ConsoleExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/exception/ConsoleExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/filter/JwtAuthenticationTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/filter/JwtAuthenticationTokenFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/model/Namespace.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/model/Namespace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/model/NamespaceAllInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/model/NamespaceAllInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/security/nacos/CustomAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/security/nacos/CustomAuthenticationProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/security/nacos/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/security/nacos/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/security/nacos/JwtTokenManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/security/nacos/JwtTokenManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/security/nacos/LdapAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/security/nacos/LdapAuthenticationProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/security/nacos/NacosAuthConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/security/nacos/NacosAuthConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/security/nacos/NacosAuthManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/security/nacos/NacosAuthManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/security/nacos/roles/NacosRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/security/nacos/roles/NacosRoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/security/nacos/users/NacosUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/security/nacos/users/NacosUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/security/nacos/users/NacosUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/security/nacos/users/NacosUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/security/nacos/users/NacosUserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/security/nacos/users/NacosUserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/java/com/alibaba/nacos/console/utils/PasswordEncoderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/java/com/alibaba/nacos/console/utils/PasswordEncoderUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/META-INF/nacos-default.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/META-INF/nacos-default.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/META-INF/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/META-INF/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/css/codemirror.css" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/css/codemirror.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/css/console1412.css" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/css/console1412.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/css/fonts/aliyun-console-font.eot" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/css/fonts/aliyun-console-font.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/css/fonts/aliyun-console-font.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/css/fonts/aliyun-console-font.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/css/fonts/aliyun-console-font.woff" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/css/fonts/aliyun-console-font.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/css/fonts/font_515771_emcns5054x3whfr.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/css/fonts/font_515771_emcns5054x3whfr.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/css/fonts/font_515771_emcns5054x3whfr.woff" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/css/fonts/font_515771_emcns5054x3whfr.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/css/fonts/roboto-bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/css/fonts/roboto-bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/css/fonts/roboto-bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/css/fonts/roboto-bold.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/css/fonts/roboto-bold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/css/fonts/roboto-bold.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/css/fonts/roboto-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/css/fonts/roboto-regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/css/fonts/roboto-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/css/fonts/roboto-regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/css/fonts/roboto-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/css/fonts/roboto-regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/css/icon.css" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/css/icon.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/css/merge.css" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/css/merge.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-bold.eot" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-bold.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-bold.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-bold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-bold.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-light.eot" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-light.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-light.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-light.woff" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-light.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-light.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-light.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-medium.eot" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-medium.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-medium.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-medium.woff" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-medium.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-medium.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-medium.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-thin.eot" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-thin.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-thin.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-thin.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-thin.woff" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-thin.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/fonts/roboto-thin.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/fonts/roboto-thin.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/icons/icon-font.eot" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/icons/icon-font.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/icons/icon-font.svg" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/icons/icon-font.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/icons/icon-font.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/icons/icon-font.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/icons/icon-font.woff" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/icons/icon-font.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/icons/icon-font.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/icons/icon-font.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/img/black_dot.png" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/img/black_dot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/img/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/img/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/img/logo-2000-390.svg" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/img/logo-2000-390.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/img/nacos-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/img/nacos-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/img/nacos.png" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/img/nacos.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/codemirror.addone.fullscreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/codemirror.addone.fullscreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/codemirror.addone.json-lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/codemirror.addone.json-lint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/codemirror.addone.lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/codemirror.addone.lint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/codemirror.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/codemirror.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/codemirror.lib.clike-lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/codemirror.lib.clike-lint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/codemirror.lib.json-lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/codemirror.lib.json-lint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/diff_match_patch.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/diff_match_patch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/javascript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/merge.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/merge.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/base/worker/workerMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/base/worker/workerMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/bat.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/bat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/coffee.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/coffee.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/cpp.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/cpp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/csharp.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/csharp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/css.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/css.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/dockerfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/dockerfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/fsharp.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/fsharp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/go.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/go.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/handlebars.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/handlebars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/html.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/html.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/ini.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/ini.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/java.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/java.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/less.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/less.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/lua.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/lua.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/markdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/markdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/msdax.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/msdax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/objective-c.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/objective-c.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/php.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/php.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/postiats.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/postiats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/powershell.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/powershell.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/pug.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/pug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/python.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/python.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/r.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/r.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/razor.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/razor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/ruby.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/ruby.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/sb.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/sb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/scss.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/scss.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/solidity.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/solidity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/sql.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/sql.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/swift.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/swift.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/vb.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/vb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/xml.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/xml.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/yaml.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/basic-languages/src/yaml.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/editor/contrib/suggest/browser/media/String_16x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/editor/contrib/suggest/browser/media/String_16x.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/editor/contrib/suggest/browser/media/String_inverse_16x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/editor/contrib/suggest/browser/media/String_inverse_16x.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.css" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.de.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.es.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.it.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.pt-br.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.zh-cn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.zh-tw.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/editor/editor.main.nls.zh-tw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/editor/standalone/browser/quickOpen/symbol-sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/editor/standalone/browser/quickOpen/symbol-sprite.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/language/css/cssMode.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/language/css/cssMode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/language/css/cssWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/language/css/cssWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/language/html/htmlMode.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/language/html/htmlMode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/language/html/htmlWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/language/html/htmlWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/language/json/jsonMode.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/language/json/jsonMode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/language/json/jsonWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/language/json/jsonWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/language/typescript/lib/typescriptServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/language/typescript/lib/typescriptServices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/language/typescript/src/mode.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/language/typescript/src/mode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/language/typescript/src/worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/language/typescript/src/worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/vs/loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/vs/loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/console-ui/public/js/xml.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/console-ui/public/js/xml.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/img/black_dot.png" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/img/black_dot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/img/logo-2000-390.svg" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/img/logo-2000-390.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/img/nacos.png" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/img/nacos.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/test/java/com/alibaba/nacos/console/controller/HealthControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/test/java/com/alibaba/nacos/console/controller/HealthControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/src/test/java/com/alibaba/nacos/console/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-register/src/test/java/com/alibaba/nacos/console/controller/UserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/META-INF/nacos-default.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/META-INF/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/Nacos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/config/ConsoleConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/controller/HealthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/controller/NamespaceController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/controller/PermissionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/controller/RoleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/controller/ServerStateController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/enums/NamespaceTypeEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/exception/ConsoleExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/filter/JwtAuthenticationTokenFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/model/Namespace.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/model/NamespaceAllInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/security/nacos/CustomAuthenticationProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/security/nacos/JwtAuthenticationEntryPoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/security/nacos/JwtTokenManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/security/nacos/LdapAuthenticationProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/security/nacos/NacosAuthConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/security/nacos/NacosAuthManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/security/nacos/roles/NacosRoleServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/security/nacos/users/NacosUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/security/nacos/users/NacosUserDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/security/nacos/users/NacosUserDetailsServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/com/alibaba/nacos/console/utils/PasswordEncoderUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/logs/access_log.2021-07-22.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/css/codemirror.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/css/console1412.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/css/fonts/aliyun-console-font.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/css/fonts/aliyun-console-font.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/css/fonts/aliyun-console-font.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/css/fonts/font_515771_emcns5054x3whfr.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/css/fonts/font_515771_emcns5054x3whfr.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/css/fonts/roboto-bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/css/fonts/roboto-bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/css/fonts/roboto-bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/css/fonts/roboto-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/css/fonts/roboto-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/css/fonts/roboto-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/css/icon.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/css/merge.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-light.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-medium.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-thin.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-thin.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/fonts/roboto-thin.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/icons/icon-font.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/icons/icon-font.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/icons/icon-font.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/icons/icon-font.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/icons/icon-font.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/img/black_dot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/img/logo-2000-390.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/img/nacos-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/img/nacos.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/codemirror.addone.fullscreen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/codemirror.addone.json-lint.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/codemirror.addone.lint.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/codemirror.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/codemirror.lib.clike-lint.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/codemirror.lib.json-lint.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/diff_match_patch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/javascript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/loader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/merge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/base/worker/workerMain.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/bat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/coffee.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/cpp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/csharp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/css.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/dockerfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/fsharp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/go.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/handlebars.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/html.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/ini.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/java.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/less.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/lua.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/markdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/msdax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/objective-c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/php.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/postiats.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/powershell.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/pug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/python.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/r.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/razor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/ruby.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/sb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/scss.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/solidity.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/sql.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/swift.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/vb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/xml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/basic-languages/src/yaml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/editor/contrib/suggest/browser/media/String_16x.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/editor/contrib/suggest/browser/media/String_inverse_16x.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/editor/editor.main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/editor/editor.main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/editor/editor.main.nls.de.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/editor/editor.main.nls.es.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/editor/editor.main.nls.fr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/editor/editor.main.nls.hu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/editor/editor.main.nls.it.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/editor/editor.main.nls.ja.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/editor/editor.main.nls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/editor/editor.main.nls.ko.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/editor/editor.main.nls.pt-br.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/editor/editor.main.nls.ru.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/editor/editor.main.nls.tr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/editor/editor.main.nls.zh-cn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/editor/editor.main.nls.zh-tw.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/editor/standalone/browser/quickOpen/symbol-sprite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/language/css/cssMode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/language/css/cssWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/language/html/htmlMode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/language/html/htmlWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/language/json/jsonMode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/language/json/jsonWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/language/typescript/lib/typescriptServices.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/language/typescript/src/mode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/language/typescript/src/worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/vs/loader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/console-ui/public/js/xml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/img/black_dot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/img/logo-2000-390.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/img/nacos.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/classes/static/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/test-classes/com/alibaba/nacos/console/controller/HealthControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiction-register/target/test-classes/com/alibaba/nacos/console/controller/UserControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-adapter/src/main/java/com/ninglz/fiction/mobile/CustomerMobileAdaptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-adapter/src/main/java/com/ninglz/bamboo/mobile/CustomerMobileAdaptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-adapter/src/main/java/com/ninglz/fiction/wap/CustomerWapAdaptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-adapter/src/main/java/com/ninglz/bamboo/wap/CustomerWapAdaptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-adapter/src/main/java/com/ninglz/fiction/web/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-adapter/src/main/java/com/ninglz/bamboo/web/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-adapter/src/main/java/com/ninglz/fiction/web/TokenEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-adapter/src/main/java/com/ninglz/bamboo/web/TokenEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/src/main/java/com/ninglz/fiction/customer/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/src/main/java/com/ninglz/bamboo/customer/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/src/main/java/com/ninglz/fiction/customer/executor/CustomerAddCmdExe.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/src/main/java/com/ninglz/bamboo/customer/executor/CustomerAddCmdExe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/src/main/java/com/ninglz/fiction/customer/executor/query/CustomerListByNameQryExe.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/src/main/java/com/ninglz/bamboo/customer/executor/query/CustomerListByNameQryExe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/src/main/java/com/ninglz/fiction/order/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/src/main/java/com/ninglz/bamboo/order/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/src/test/java/com/ninglz/fiction/app/CustomerConvertorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/src/test/java/com/ninglz/bamboo/app/CustomerConvertorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/src/test/java/com/ninglz/fiction/app/CustomerValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-app/src/test/java/com/ninglz/bamboo/app/CustomerValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/fiction/api/CustomerServiceI.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/bamboo/api/CustomerServiceI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/fiction/dto/CustomerAddCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/bamboo/dto/CustomerAddCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/fiction/dto/CustomerListByNameQry.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/bamboo/dto/CustomerListByNameQry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/fiction/dto/data/CustomerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/bamboo/dto/data/CustomerDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/fiction/dto/data/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/bamboo/dto/data/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/fiction/dto/event/CustomerCreatedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/bamboo/dto/event/CustomerCreatedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/fiction/dto/event/DomainEventConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-client/src/main/java/com/ninglz/bamboo/dto/event/DomainEventConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/CompanyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/bamboo/domain/customer/CompanyType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/Credit.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/bamboo/domain/customer/Credit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/bamboo/domain/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/CustomerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/bamboo/domain/customer/CustomerType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/SourceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/bamboo/domain/customer/SourceType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/domainservice/CreditChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/bamboo/domain/customer/domainservice/CreditChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/gateway/CreditGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/bamboo/domain/customer/gateway/CreditGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/customer/gateway/CustomerGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/bamboo/domain/customer/gateway/CustomerGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/bamboo/domain/order/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/fiction/domain/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/main/java/com/ninglz/bamboo/domain/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/test/java/com/ninglz/fiction/domain/CustomerEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-domain/src/test/java/com/ninglz/bamboo/domain/CustomerEntityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/java/com/ninglz/fiction/config/DiamondConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/java/com/ninglz/bamboo/config/DiamondConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/java/com/ninglz/fiction/customer/CreditGatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/java/com/ninglz/bamboo/customer/CreditGatewayImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/java/com/ninglz/fiction/customer/CustomerDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/java/com/ninglz/bamboo/customer/CustomerDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/java/com/ninglz/fiction/customer/CustomerGatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/java/com/ninglz/bamboo/customer/CustomerGatewayImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/java/com/ninglz/fiction/customer/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/java/com/ninglz/bamboo/customer/CustomerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/java/com/ninglz/fiction/order/OrderGatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/java/com/ninglz/bamboo/order/OrderGatewayImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/resources/mybatis/customer-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/main/resources/mybatis/customer-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/test/java/com/ninglz/fiction/repository/CustomerMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-infrastructure/src/test/java/com/ninglz/bamboo/repository/CustomerMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-start/src/main/java/com/ninglz/fiction/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-start/src/main/java/com/ninglz/bamboo/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-start/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-start/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-start/src/test/java/com/ninglz/fiction/TestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-start/src/test/java/com/ninglz/bamboo/TestApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-start/src/test/java/com/ninglz/fiction/test/CustomerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-start/src/test/java/com/ninglz/bamboo/test/CustomerServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-start/src/test/resources/logback-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/bamboo-auth-start/src/test/resources/logback-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-common/bamboo-common-core/src/main/java/com/ninglz/bamboo/common/core/util/StatusResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-common/bamboo-common-core/src/main/java/com/ninglz/bamboo/common/core/util/StatusResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-common/bamboo-knife4j/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-common/bamboo-knife/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-common/bamboo-knife4j/src/main/java/com/ninglz/bamboo/commoon/knife/annotation/EnableBambooKnife.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-common/bamboo-knife/src/main/java/com/ninglz/bamboo/commoon/knife/annotation/EnableBambooKnife.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-common/bamboo-knife4j/src/main/java/com/ninglz/bamboo/commoon/knife/config/KnifeAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-common/bamboo-knife/src/main/java/com/ninglz/bamboo/commoon/knife/config/KnifeAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-common/bamboo-knife4j/src/main/java/com/ninglz/bamboo/commoon/knife/support/KnifeProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-common/bamboo-knife/src/main/java/com/ninglz/bamboo/commoon/knife/support/KnifeProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bamboo-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bamboo-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -464,36 +194,47 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/fiction-register" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bamboo-common/bamboo-common-core/src/main" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.33563218" />
     <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\workspace\project\fiction\fiction-register" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ninglz.bamboo.commoon.knife.support" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\project\bamboo\bamboo-common\bamboo-common-core\src\main" />
+      <recent name="D:\workspace\project\bamboo\bamboo-upms\bamboo-upms-start\src\main\resources" />
+      <recent name="D:\workspace\project\bamboo\bamboo-upms" />
+      <recent name="D:\workspace\project\fiction\fiction-register" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="ls" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Application" />
+        <option value="MavenRunConfiguration" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UpmsApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="bamboo-auth-infrastructure" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -501,6 +242,33 @@
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="bamboo-auth-infrastructure" />
       <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -518,13 +286,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UpmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="bamboo-upms-start" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ninglz.bamboo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ninglz.bamboo.UpmsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.UpmsApplication" />
         <item itemvalue="Spring Boot.Nacos" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -542,6 +327,7 @@
       <workItem from="1626959353968" duration="112000" />
       <workItem from="1626961540024" duration="1971000" />
       <workItem from="1627010622308" duration="6488000" />
+      <workItem from="1627036239116" duration="13736000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1626879971865</created>
@@ -561,7 +347,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -590,6 +376,72 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目初始化" />
     <option name="LAST_COMMIT_MESSAGE" value="项目初始化" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1645" height="522" key="GridCell.Tab.0.bottom" timestamp="1627052887116">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1645" height="522" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1627052887116" />
+    <state width="1645" height="522" key="GridCell.Tab.0.center" timestamp="1627052887116">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1645" height="522" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1627052887116" />
+    <state width="1645" height="522" key="GridCell.Tab.0.left" timestamp="1627052887115">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1645" height="522" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1627052887115" />
+    <state width="1645" height="522" key="GridCell.Tab.0.right" timestamp="1627052887116">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1645" height="522" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1627052887116" />
+    <state width="1645" height="522" key="GridCell.Tab.1.bottom" timestamp="1627052887116">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1645" height="522" key="GridCell.Tab.1.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1627052887116" />
+    <state width="1645" height="522" key="GridCell.Tab.1.center" timestamp="1627052887116">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1645" height="522" key="GridCell.Tab.1.center/0.0.2048.1112@0.0.2048.1112" timestamp="1627052887116" />
+    <state width="1645" height="522" key="GridCell.Tab.1.left" timestamp="1627052887116">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1645" height="522" key="GridCell.Tab.1.left/0.0.2048.1112@0.0.2048.1112" timestamp="1627052887116" />
+    <state width="1645" height="522" key="GridCell.Tab.1.right" timestamp="1627052887116">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1645" height="522" key="GridCell.Tab.1.right/0.0.2048.1112@0.0.2048.1112" timestamp="1627052887116" />
+    <state x="211" y="73" key="SettingsEditor" timestamp="1627050031676">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="211" y="73" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1627050031676" />
+    <state x="304" y="114" key="SpringBootCustomization" timestamp="1627050025335">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="304" y="114" key="SpringBootCustomization/0.0.2048.1112@0.0.2048.1112" timestamp="1627050025335" />
+    <state width="514" height="363" key="documentation.popup.size" timestamp="1627045879828">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="514" height="363" key="documentation.popup.size/0.0.2048.1112@0.0.2048.1112" timestamp="1627045879828" />
+    <state x="407" y="302" width="615" height="552" key="find.popup" timestamp="1627037562110">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="407" y="302" width="615" height="552" key="find.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1627037562110" />
+    <state x="272" y="234" width="973" height="637" key="new project wizard" timestamp="1627050953149">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="272" y="234" width="973" height="637" key="new project wizard/0.0.2048.1112@0.0.2048.1112" timestamp="1627050953149" />
+    <state x="562" y="262" key="run.anything.popup" timestamp="1627052182559">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="562" y="262" key="run.anything.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1627052182559" />
+    <state x="378" y="309" width="672" height="678" key="search.everywhere.popup" timestamp="1627052247115">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="378" y="309" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1627052247115" />
+    <state x="407" y="98" key="spring file set editor" timestamp="1627050018856">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="407" y="98" key="spring file set editor/0.0.2048.1112@0.0.2048.1112" timestamp="1627050018856" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
