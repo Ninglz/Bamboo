@@ -4,13 +4,11 @@
     <parent>
         <groupId>com.ninglz</groupId>
         <artifactId>bamboo-upms</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
+        <version>1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>bamboo-upms-start</artifactId>
     <packaging>jar</packaging>
-    <name>bamboo-upms-start</name>
 
     <properties>
         <mybatis-plus.version>3.4.3</mybatis-plus.version>
@@ -26,6 +24,10 @@
         <dependency>
             <groupId>com.ninglz</groupId>
             <artifactId>bamboo-upms-adapter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ninglz</groupId>
+            <artifactId>bamboo-common-knife</artifactId>
         </dependency>
 
 <!--        <dependency>-->
@@ -48,6 +50,17 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!--nacos 服务发现-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!--nacos 配置中心-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
 
     </dependencies>

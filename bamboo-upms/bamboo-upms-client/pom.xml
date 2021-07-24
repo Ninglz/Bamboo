@@ -4,8 +4,7 @@
     <parent>
         <groupId>com.ninglz</groupId>
         <artifactId>bamboo-upms</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
+        <version>1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>bamboo-upms-client</artifactId>
