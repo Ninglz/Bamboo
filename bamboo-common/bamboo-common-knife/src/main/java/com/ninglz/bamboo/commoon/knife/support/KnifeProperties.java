@@ -14,7 +14,7 @@ import java.util.List;
  * @author: ninglz
  * @created: 2021/07/23 13:24
  */
-@Component
+//@Component
 @Data
 @ConfigurationProperties("knife")
 public class KnifeProperties {

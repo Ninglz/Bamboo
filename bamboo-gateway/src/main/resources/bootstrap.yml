@@ -1,9 +1,4 @@
-server:
-  port: 9999
-
 spring:
-  application:
-    name: @artifactId@
   profiles:
     active: @profiles.active@
   cloud:
@@ -12,6 +7,7 @@ spring:
         server-addr: ${NACOS_HOST:bamboo-register}:${NACOS_PORT:8848}
       config:
         server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        namespace: ${spring.profiles.active}
         file-extension: yml
         shared-configs:
           - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}

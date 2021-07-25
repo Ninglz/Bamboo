@@ -1,19 +1,17 @@
-server:
-  port: 12301
-
 spring:
-  application:
-    name: @artifactId@
   profiles:
     active: @profiles.active@
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/test
-    username: root
-    password: root
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_HOST:bamboo-register}:${NACOS_PORT:8848}
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        namespace: ${spring.profiles.active}
+        file-extension: yml
+        shared-configs:
+          - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
 
-knife:
-  enabled: false
 
 
 

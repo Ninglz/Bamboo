@@ -7,10 +7,7 @@ import org.springframework.context.annotation.Import;
 import springfox.documentation.swagger2.annotations.EnableSwagger2WebFlux;
 import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.Inherited;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.*;
 
 /**
  * @program: bamboo
@@ -18,10 +15,11 @@ import java.lang.annotation.RetentionPolicy;
  * @author: ninglz
  * @created: 2021/07/23 13:24
  */
+@Target({ ElementType.TYPE })
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Inherited
-@EnableSwagger2WebMvc
+//@EnableSwagger2WebMvc
 @EnableSwagger2WebFlux
 @EnableConfigurationProperties(KnifeProperties.class)
 @Import({KnifeAutoConfiguration.class})

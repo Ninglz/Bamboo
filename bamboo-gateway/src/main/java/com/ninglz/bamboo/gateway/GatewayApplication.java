@@ -12,7 +12,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @created: 2021/07/24 11:51
  */
 @EnableDiscoveryClient
-@SpringBootApplication()
+@SpringBootApplication
 @EnableBambooKnife
 public class GatewayApplication {
 
