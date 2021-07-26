@@ -8,11 +8,9 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import springfox.documentation.builders.ApiInfoBuilder;
-import springfox.documentation.builders.ParameterBuilder;
-import springfox.documentation.builders.PathSelectors;
-import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.builders.*;
 import springfox.documentation.schema.ModelRef;
+import springfox.documentation.schema.ScalarType;
 import springfox.documentation.service.*;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spi.service.contexts.SecurityContext;
@@ -58,26 +56,28 @@ public class KnifeAutoConfiguration {
             properties.getExcludePath().addAll(SWAGGER_DEFAULT_EXCLUDE_PATH);
         }
         // 版本请求头添加version处理用于灰度路由
-        List<Parameter> pars = new ArrayList<>();
-        Parameter versionPar = new ParameterBuilder().description("灰度路由版本信息")
-                .name("VERSION").parameterType("header")
-                .modelRef(new ModelRef("string")).required(false)
-                .build();
-        pars.add(versionPar);
+        List<RequestParameter> params = new ArrayList<>();
+        RequestParameterBuilder versionParam = new RequestParameterBuilder().description("灰度路由版本信息")
+                .in(ParameterType.HEADER).name("VERSION").required(false)
+                .query(param -> param.model(model -> model.scalarModel(ScalarType.STRING)));
+
+        params.add(versionParam.build());
 
         ApiSelectorBuilder builder = new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
-                .globalOperationParameters(pars)
+                .globalRequestParameters(params)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage(properties.getBasePackage()))
                 // 可以根据url路径设置哪些请求加入文档，忽略哪些请求
                 .paths(PathSelectors.any());
+
         properties.getBasePath().forEach(p -> builder.paths(PathSelectors.ant(p)));
         properties.getExcludePath().forEach(p -> builder.paths(PathSelectors.ant(p).negate()));
 
-        return builder.build().securitySchemes(Collections.singletonList(securitySchema()))
-                .securityContexts(Collections.singletonList(securityContext())).pathMapping("/");
-
+        return builder.build()
+                .securitySchemes(Collections.singletonList(securitySchema()))
+                .securityContexts(Collections.singletonList(securityContext()))
+                .pathMapping("/");
     }
 
     private ApiInfo apiInfo() {

@@ -29,11 +29,15 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication(scanBasePackages = "com.alibaba.nacos")
 @ServletComponentScan
 @EnableScheduling
-public class Nacos {
+public class RegisterApplication {
     
     public static void main(String[] args) {
-        System.setProperty("nacos.standalone","true");
-        SpringApplication.run(Nacos.class, args);
+        System.setProperty("nacos.standalone", "true");
+        // 不设置会反复重启最终失败，原因暂时不明
+        System.setProperty("nacos.core.auth.enabled", "false");
+        System.setProperty("server.tomcat.basedir", "logs");
+
+        SpringApplication.run(RegisterApplication.class, args);
     }
 }
 

@@ -21,7 +21,7 @@
         <hutool.version>5.7.3</hutool.version>
         <junit.version>4.12</junit.version>
         <knife4j.version>2.0.9</knife4j.version>
-
+        <springfox.version>3.0.0</springfox.version>
 
     </properties>
 
@@ -81,18 +81,22 @@
         <dependency>
             <groupId>com.alibaba.cola</groupId>
             <artifactId>cola-component-domain-starter</artifactId>
+            <version>4.0.1</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba.cola</groupId>
             <artifactId>cola-component-exception</artifactId>
+            <version>4.0.1</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba.cola</groupId>
             <artifactId>cola-component-catchlog-starter</artifactId>
+            <version>4.0.1</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba.cola</groupId>
             <artifactId>cola-component-dto</artifactId>
+            <version>4.0.1</version>
         </dependency>
         <!-- COLA components End-->
     </dependencies>

@@ -4,6 +4,7 @@ import com.ninglz.bamboo.commoon.knife.config.KnifeAutoConfiguration;
 import com.ninglz.bamboo.commoon.knife.support.KnifeProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Import;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import springfox.documentation.swagger2.annotations.EnableSwagger2WebFlux;
 import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 
@@ -19,8 +20,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Inherited
-//@EnableSwagger2WebMvc
-@EnableSwagger2WebFlux
+@EnableSwagger2
 @EnableConfigurationProperties(KnifeProperties.class)
 @Import({KnifeAutoConfiguration.class})
 public @interface EnableBambooKnife {
