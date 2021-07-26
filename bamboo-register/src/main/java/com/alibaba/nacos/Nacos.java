@@ -29,11 +29,11 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication(scanBasePackages = "com.alibaba.nacos")
 @ServletComponentScan
 @EnableScheduling
-public class NacosApplication {
+public class Nacos {
     
     public static void main(String[] args) {
-        System.setProperty("nacos.standalone", "true");
-        SpringApplication.run(NacosApplication.class, args);
+        System.setProperty("nacos.standalone","true");
+        SpringApplication.run(Nacos.class, args);
     }
 }
 
