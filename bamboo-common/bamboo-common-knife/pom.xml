@@ -30,6 +30,18 @@
             <artifactId>knife4j-micro-spring-boot-starter</artifactId>
             <version>${knife4j.version}</version>
         </dependency>
+        <!--webflux 相关包-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webflux</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <!--网关 swagger 聚合依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-gateway-server</artifactId>
+            <scope>provided</scope>
+        </dependency>
 
 
         <dependency>

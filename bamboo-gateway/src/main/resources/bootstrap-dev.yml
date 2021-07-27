@@ -14,6 +14,14 @@ spring:
         file-extension: yml
         shared-configs:
           - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+    gateway:
+      routes: # 路由可以有多个
+        - id: bammboo-upms-router # 我们⾃定义的路由 ID，保持唯⼀
+          uri: lb://bamboo-upms-start
+          predicates: #路由条件
+            - Path=/upms/**
+          filters:
+            - StripPrefix=1
 
 knife:
   title: 网关 API

@@ -17,6 +17,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
+        <!--Spring Cloud2020移除了Ribbon，需要加入LB-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+        </dependency>
         <!--nacos 服务发现-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
@@ -27,6 +32,13 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
+        <!--验证码-->
+        <dependency>
+            <groupId>com.anji-plus</groupId>
+            <artifactId>spring-boot-starter-captcha</artifactId>
+            <version>${captcha.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>com.ninglz</groupId>
             <artifactId>bamboo-common-knife</artifactId>
