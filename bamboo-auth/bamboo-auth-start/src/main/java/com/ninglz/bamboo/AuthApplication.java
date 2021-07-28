@@ -10,10 +10,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author Frank Zhang
  */
 @SpringBootApplication(scanBasePackages = {"com.ninglz.bamboo","com.alibaba.cola"})
-@MapperScan("com.ninglz.fiction.customer")
-public class Application {
+//@MapperScan("com.ninglz.bamboo.customer")
+public class AuthApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(AuthApplication.class, args);
     }
 }
