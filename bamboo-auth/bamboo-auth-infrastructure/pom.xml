@@ -35,5 +35,16 @@
             <version>3.4.3</version>
         </dependency>
 
+        <!--server-api-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ninglz</groupId>
+            <artifactId>bamboo-common-core</artifactId>
+        </dependency>
+
     </dependencies>
 </project>

@@ -1,4 +1,4 @@
-package com.ninglz.bamboo.mobile;
+package com.ninglz.bamboo.common.mobile;
 
 /**
  * Customer Mobile Adaptor
