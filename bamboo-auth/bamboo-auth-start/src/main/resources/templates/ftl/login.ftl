@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
 	<meta charset="utf-8">
-	<meta name="author" content="Kodinger">
+	<meta name="author" content="ninglz">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Bamboo微服务统一认证</title>
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/login.css">
 </head>
 
-<body class="my-login-page">
+<body class="login-page">
 	<section class="h-100">
 		<div class="container h-100">
 			<div class="row justify-content-md-center h-100">
@@ -21,10 +21,10 @@
 					<div class="card fat">
 						<div class="card-body">
 							<h4 class="card-title" align="center">统一认证系统</h4>
-							<form method="POST" class="my-login-validation" novalidate="">
+							<form method="POST" class="login-validation" novalidate="">
 								<div class="form-group">
-									<label for="email">账号</label>
-									<input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+									<label for="username">账号</label>
+									<input id="username" type="text" class="form-control" name="username" value="" required autofocus>
 									<div class="invalid-feedback">
 										账号无效
 									</div>

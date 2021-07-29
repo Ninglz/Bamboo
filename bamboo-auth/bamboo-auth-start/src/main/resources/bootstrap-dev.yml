@@ -53,4 +53,7 @@ spring:
     suffix: .ftl
     # 设定模板的加载路径，多个以逗号分隔，默认:
     template-loader-path: classpath:/templates/
-
+  security:
+    user:
+      name: user
+      password: user
