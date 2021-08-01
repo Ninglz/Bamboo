@@ -1,6 +1,7 @@
 package com.ninglz.bamboo.userDetails;
 
 import com.ninglz.bamboo.api.BambooUserDetailsService;
+import com.ninglz.bamboo.common.core.constant.CacheConstants;
 import com.ninglz.bamboo.domain.user.BambooSecurityUser;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cache.Cache;
@@ -9,7 +10,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
 
 /**
  * @program: bamboo
@@ -26,7 +26,9 @@ public class BambooUserDetailsServiceImpl implements BambooUserDetailsService {
     @Override
     public UserDetails loadUserBySocial(String type) throws UsernameNotFoundException {
 
-        return null;
+        return new BambooSecurityUser(1,1,1,"110",
+                "","110","111",true,true,
+                true,true,null);
     }
 
     @Override
@@ -35,6 +37,8 @@ public class BambooUserDetailsServiceImpl implements BambooUserDetailsService {
         if (cache != null && cache.get(username) != null) {
             return cache.get(username, BambooSecurityUser.class);
         }
-        return null;
+        return new BambooSecurityUser(1,1,1,"110",
+                "","110","111",true,true,
+                true,true,null);
     }
 }
