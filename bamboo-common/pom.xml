@@ -17,6 +17,8 @@
         <module>bamboo-common-bom</module>
         <module>bamboo-common-log</module>
         <module>bamboo-common-security</module>
+        <module>bamboo-common-data</module>
+        <module>bamboo-common-fegin</module>
     </modules>
 
 

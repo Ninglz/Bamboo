@@ -13,6 +13,8 @@
     <properties>
         <bamboo.version>1.0-SNAPSHOT</bamboo.version>
         <cola.components.version>4.0.1</cola.components.version>
+        <swagger.core.version>1.5.22</swagger.core.version>
+        <mybatis-plus.version>3.4.3</mybatis-plus.version>
     </properties>
 
     <dependencyManagement>
@@ -46,6 +48,12 @@
             </dependency>
             <!--COLA Components End-->
 
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger.core.version}</version>
+            </dependency>
+
             <!--稳定版本，替代spring security bom内置-->
             <dependency>
                 <groupId>org.springframework.security.oauth</groupId>
@@ -62,6 +70,18 @@
                 <groupId>com.ninglz</groupId>
                 <artifactId>bamboo-common-knife</artifactId>
                 <version>${bamboo.version}</version>
+            </dependency>
+            <!--mybatis plus extension,包含了mybatis plus core-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-extension</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <!--mybatis-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

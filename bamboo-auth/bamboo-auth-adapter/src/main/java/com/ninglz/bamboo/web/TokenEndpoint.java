@@ -2,6 +2,8 @@ package com.ninglz.bamboo.web;
 
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.ninglz.bamboo.common.core.util.StatusResponse;
+import com.ninglz.bamboo.service.BambooTokenDealServiceImpl;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
@@ -22,10 +24,10 @@ import java.util.Map;
 @RequestMapping("/token")
 public class TokenEndpoint {
 
-//    private final ClientDetailsService clientDetailsService;
-//
-//    private final PigxTokenDealServiceImpl dealService;
-//
+    private final ClientDetailsService clientDetailsService;
+
+    private final BambooTokenDealServiceImpl dealService;
+
 //    private final RemoteTenantService tenantService;
 
     /**
@@ -50,47 +52,47 @@ public class TokenEndpoint {
      * @param modelAndView
      * @return
      */
-//    @GetMapping("/confirm_access")
-//    public ModelAndView confirm(HttpServletRequest request, HttpSession session, ModelAndView modelAndView) {
-//        Map<String, Object> scopeList = (Map<String, Object>) request.getAttribute("scopes");
-//        modelAndView.addObject("scopeList", scopeList.keySet());
-//
-//        Object auth = session.getAttribute("authorizationRequest");
-//        if (auth != null) {
-//            AuthorizationRequest authorizationRequest = (AuthorizationRequest) auth;
-//            ClientDetails clientDetails = clientDetailsService.loadClientByClientId(authorizationRequest.getClientId());
-//            modelAndView.addObject("app", clientDetails.getAdditionalInformation());
-////            modelAndView.addObject("user", SecurityUtils.getUser());
-//        }
-//
-//        modelAndView.setViewName("ftl/confirm");
-//        return modelAndView;
-//    }
+    @GetMapping("/confirm_access")
+    public ModelAndView confirm(HttpServletRequest request, HttpSession session, ModelAndView modelAndView) {
+        Map<String, Object> scopeList = (Map<String, Object>) request.getAttribute("scopes");
+        modelAndView.addObject("scopeList", scopeList.keySet());
 
-//    /**
-//     * 退出token
-//     * @param authHeader Authorization
-//     */
-//    @DeleteMapping("/logout")
-//    public R logout(@RequestHeader(value = HttpHeaders.AUTHORIZATION, required = false) String authHeader) {
-//        if (StrUtil.isBlank(authHeader)) {
-//            return R.ok(Boolean.FALSE, "退出失败，token 为空");
-//        }
-//
-//        String tokenValue = authHeader.replace(OAuth2AccessToken.BEARER_TYPE, StrUtil.EMPTY).trim();
-//        return delToken(tokenValue);
-//    }
-//
-//    /**
-//     * 令牌管理调用
-//     * @param token token
-//     * @return
-//     */
+        Object auth = session.getAttribute("authorizationRequest");
+        if (auth != null) {
+            AuthorizationRequest authorizationRequest = (AuthorizationRequest) auth;
+            ClientDetails clientDetails = clientDetailsService.loadClientByClientId(authorizationRequest.getClientId());
+            modelAndView.addObject("app", clientDetails.getAdditionalInformation());
+//            modelAndView.addObject("user", SecurityUtils.getUser());
+        }
+
+        modelAndView.setViewName("ftl/confirm");
+        return modelAndView;
+    }
+
+    /**
+     * 退出token
+     * @param authHeader Authorization
+     */
+    @DeleteMapping("/logout")
+    public StatusResponse logout(@RequestHeader(value = HttpHeaders.AUTHORIZATION, required = false) String authHeader) {
+        if (StrUtil.isBlank(authHeader)) {
+            return StatusResponse.error(40215455, "退出失败，token 为空");
+        }
+
+        String tokenValue = authHeader.replace(OAuth2AccessToken.BEARER_TYPE, StrUtil.EMPTY).trim();
+        return delToken(tokenValue);
+    }
+
+    /**
+     * 令牌管理调用
+     * @param token token
+     * @return
+     */
 //    @Inner
-//    @DeleteMapping("/{token}")
-//    public R<Boolean> delToken(@PathVariable("token") String token) {
-//        return dealService.removeToken(token);
-//    }
+    @DeleteMapping("/{token}")
+    public StatusResponse delToken(@PathVariable("token") String token) {
+        return dealService.removeToken(token);
+    }
 //
 //    /**
 //     * 查询token

@@ -1,19 +1,19 @@
 package com.ninglz.bamboo.common.core.constant;
 
 /**
- * @program: bamboo
- * @description: 缓存相关常量
- * @author: ninglz
- * @created: 2021/07/29 17:55
+ * @author lengleng
+ * @date 2019-04-28
+ * <p>
+ * 缓存的key 常量
  */
 public interface CacheConstants {
 
 	/**
 	 * 全局缓存，在缓存名称上加上该前缀表示该缓存不区分租户，比如:
 	 * <p/>
-	 * {@code @Cacheable(value = CacheConstants.GLOBALLY+CacheConstants.MENU_DETAILS, key = "#roleId  + '_menu'", unless = "#result == null")}
+	 * {@code @Cacheable(value = CacheConstants.GLOBAL+CacheConstants.MENU_DETAILS, key = "#roleId  + '_menu'", unless = "#result == null")}
 	 */
-	String GLOBALLY = "gl:";
+	String GLOBAL = "global:";
 
 	/**
 	 * 验证码前缀
@@ -48,12 +48,12 @@ public interface CacheConstants {
 	/**
 	 * spring boot admin 事件key
 	 */
-	String EVENT_KEY = GLOBALLY + "event_key";
+	String EVENT_KEY = GLOBAL + "event_key";
 
 	/**
 	 * 路由存放
 	 */
-	String ROUTE_KEY = GLOBALLY + "gateway_route_key";
+	String ROUTE_KEY = GLOBAL + "gateway_route_key";
 
 	/**
 	 * 内存reload 时间
@@ -83,7 +83,7 @@ public interface CacheConstants {
 	/**
 	 * 租户缓存 (不区分租户)
 	 */
-	String TENANT_DETAILS = GLOBALLY + "tenant_details";
+	String TENANT_DETAILS = GLOBAL + "tenant_details";
 
 	/**
 	 * 客户端配置缓存

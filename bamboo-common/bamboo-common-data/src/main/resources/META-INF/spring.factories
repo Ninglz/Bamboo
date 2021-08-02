@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.ninglz.bamboo.common.data.cache.RedisTemplateConfig,\
+  com.ninglz.bamboo.common.data.cache.RedisCacheAutoConfiguration

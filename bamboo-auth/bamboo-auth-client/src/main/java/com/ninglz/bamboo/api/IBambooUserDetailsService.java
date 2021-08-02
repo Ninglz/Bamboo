@@ -10,7 +10,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
  * @author: ninglz
  * @created: 2021/07/27 22:11
  */
-public interface BambooUserDetailsService extends UserDetailsService {
+public interface IBambooUserDetailsService extends UserDetailsService {
 
     /**
      * 根据社交登录类型 登录

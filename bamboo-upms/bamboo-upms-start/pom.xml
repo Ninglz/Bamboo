@@ -18,11 +18,6 @@
 
         <dependency>
             <groupId>com.ninglz</groupId>
-            <artifactId>bamboo-common-core</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.ninglz</groupId>
             <artifactId>bamboo-upms-adapter</artifactId>
         </dependency>
         <dependency>

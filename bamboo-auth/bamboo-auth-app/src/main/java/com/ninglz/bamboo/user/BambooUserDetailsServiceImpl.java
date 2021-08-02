@@ -1,6 +1,7 @@
-package com.ninglz.bamboo.userDetails;
+package com.ninglz.bamboo.user;
 
-import com.ninglz.bamboo.api.BambooUserDetailsService;
+import com.ninglz.bamboo.api.IBambooUserDetailsService;
+import com.ninglz.bamboo.common.core.constant.CacheConstants;
 import com.ninglz.bamboo.domain.user.BambooSecurityUser;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cache.Cache;
@@ -8,8 +9,6 @@ import org.springframework.cache.CacheManager;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-
-import java.util.*;
 
 /**
  * @program: bamboo
@@ -19,7 +18,7 @@ import java.util.*;
  */
 @Service
 @RequiredArgsConstructor
-public class BambooUserDetailsServiceImpl implements BambooUserDetailsService {
+public class BambooUserDetailsServiceImpl implements IBambooUserDetailsService {
 
     private final CacheManager cacheManager;
 
