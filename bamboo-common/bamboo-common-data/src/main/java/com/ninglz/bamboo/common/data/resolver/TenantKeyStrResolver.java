@@ -3,6 +3,7 @@ package com.ninglz.bamboo.common.data.resolver;
 
 import com.ninglz.bamboo.common.core.util.KeyStrResolver;
 import com.ninglz.bamboo.common.data.tenant.TenantContextHolder;
+import org.springframework.stereotype.Component;
 
 /**
  * @author lengleng
@@ -10,6 +11,7 @@ import com.ninglz.bamboo.common.data.tenant.TenantContextHolder;
  * <p>
  * 租户字符串处理（方便其他模块获取）
  */
+@Component
 public class TenantKeyStrResolver implements KeyStrResolver {
 
 	/**

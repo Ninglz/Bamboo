@@ -3,14 +3,6 @@ server:
 spring:
   application:
     name: @artifactId@
-  devtools:
-    # 热部署生效
-    add-properties: true
-    restart:
-      # 重启的目录
-      additional-paths: src/main/java
-      # classpath目录下的WEB-INF文件夹内容修改不重启
-      exclude: WEB-INF/**
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/test
@@ -20,12 +12,14 @@ spring:
     nacos:
       discovery:
         server-addr: ${NACOS_HOST:bamboo-register}:${NACOS_PORT:11151}
+        namespace: ${spring.profiles.active}
       config:
         server-addr: ${spring.cloud.nacos.discovery.server-addr}
         namespace: ${spring.profiles.active}
         file-extension: yml
         shared-configs:
           - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+
   freemarker:
     # 是否允许HttpServletRequest属性覆盖(隐藏)控制器生成的同名模型属性。
     allow-request-override: false
@@ -57,3 +51,4 @@ spring:
     user:
       name: user
       password: user
+

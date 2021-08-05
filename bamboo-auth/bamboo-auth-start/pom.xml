@@ -59,6 +59,10 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.ninglz</groupId>
+            <artifactId>bamboo-common-knife</artifactId>
+        </dependency>
 
 
     </dependencies>

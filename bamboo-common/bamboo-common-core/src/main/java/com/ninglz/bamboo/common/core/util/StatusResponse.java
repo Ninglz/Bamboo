@@ -37,6 +37,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Accessors(chain = true)
 @ApiModel(value = "响应信息主体")
+@Getter
 public class StatusResponse implements Serializable {
 
 	private static final long serialVersionUID = 1L;

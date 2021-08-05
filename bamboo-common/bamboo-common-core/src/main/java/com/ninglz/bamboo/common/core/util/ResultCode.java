@@ -3,9 +3,6 @@ package com.ninglz.bamboo.common.core.util;
 
 import lombok.*;
 
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
 /**
  * 统一API响应返回码
  * @author ninglz 2018-03-06

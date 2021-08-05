@@ -22,7 +22,14 @@
 
         <dependency>
             <groupId>com.ninglz</groupId>
-            <artifactId>bamboo-common-core</artifactId>
+            <artifactId>bamboo-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ninglz</groupId>
+            <artifactId>bamboo-common-data</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <!--fastjson-->

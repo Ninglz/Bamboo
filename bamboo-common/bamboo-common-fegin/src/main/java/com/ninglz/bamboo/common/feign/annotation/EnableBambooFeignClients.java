@@ -51,7 +51,7 @@ public @interface EnableBambooFeignClients {
 	 * package names.
 	 * @return the array of 'basePackages'.
 	 */
-	String[] basePackages() default { "com.pig4cloud.pigx" };
+	String[] basePackages() default { "com.ninglz.bamboo" };
 
 	/**
 	 * Type-safe alternative to {@link #basePackages()} for specifying the packages to

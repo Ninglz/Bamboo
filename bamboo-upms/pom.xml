@@ -33,11 +33,7 @@
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-extension</artifactId>
         </dependency>
-        <!--feign 工具类-->
-        <dependency>
-            <groupId>com.ninglz</groupId>
-            <artifactId>bamboo-common-feign</artifactId>
-        </dependency>
+
     </dependencies>
 
     <dependencyManagement>

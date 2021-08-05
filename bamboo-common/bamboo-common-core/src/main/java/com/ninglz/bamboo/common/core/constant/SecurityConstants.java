@@ -26,9 +26,9 @@ package com.ninglz.bamboo.common.core.constant;
 public interface SecurityConstants {
 
 	/**
-	 * 启动时是否检查Inner注解安全性
+	 * 启动时是否检查Auth注解安全性
 	 */
-	boolean INNER_CHECK = true;
+	boolean AUTH_CHECK = true;
 
 	/**
 	 * 刷新
@@ -53,7 +53,7 @@ public interface SecurityConstants {
 	/**
 	 * 前缀
 	 */
-	String PIGX_PREFIX = "pigx_";
+	String BAMBOO_PREFIX = "bamboo_";
 
 	/**
 	 * token 相关前缀
@@ -219,5 +219,15 @@ public interface SecurityConstants {
 	 * AES 加密
 	 */
 	String AES = "aes";
+
+	/**
+	 * RSA 公钥
+	 */
+	String RSA_PUBLIC_KEY = "rsa_public_key";
+
+	/**
+	 * RSA 私钥
+	 */
+	String RSA_PRIVATE_KEY = "rsa_private_key";
 
 }

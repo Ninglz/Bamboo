@@ -21,7 +21,7 @@
 					<div class="card fat">
 						<div class="card-body">
 							<h4 class="card-title" align="center">统一认证系统</h4>
-							<form method="POST" class="login-validation" novalidate="">
+							<form method="POST"  action="/token/form" class="login-validation" novalidate="">
 								<div class="form-group">
 									<label for="username">账号</label>
 									<input id="username" type="text" class="form-control" name="username" value="" required autofocus>
@@ -40,6 +40,7 @@
 								    <div class="invalid-feedback">
 								    	密码是必填项
 							    	</div>
+
 								</div>
 
 <#--								<div class="form-group">-->
@@ -57,6 +58,9 @@
 <#--								<div class="mt-4 text-center">-->
 <#--									Don't have an account? <a href="register.html">Create One</a>-->
 <#--								</div>-->
+								<#if error??>
+									<span style="color: red; ">${error}</span>
+								</#if>
 							</form>
 						</div>
 					</div>
