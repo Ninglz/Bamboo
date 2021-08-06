@@ -6,6 +6,7 @@ import cn.hutool.crypto.asymmetric.RSA;
 import com.ninglz.bamboo.common.core.constant.SecurityConstants;
 import com.ninglz.bamboo.common.core.util.StatusResponse;
 import com.ninglz.bamboo.common.data.service.IRedisService;
+import com.ninglz.bamboo.common.log.annotation.SysLog;
 import lombok.RequiredArgsConstructor;
 import org.apache.catalina.security.SecurityUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,7 @@ public class UpmsController {
 
     private final IRedisService redisService;
 
+    @SysLog("获取公钥")
     @GetMapping(value = "/publicKey")
     public StatusResponse getPublicKey(){
         if(Boolean.TRUE.equals(redisService.hasKey(SecurityConstants.RSA_PUBLIC_KEY))){

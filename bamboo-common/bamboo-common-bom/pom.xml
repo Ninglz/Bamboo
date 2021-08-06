@@ -15,6 +15,8 @@
         <cola.components.version>4.0.1</cola.components.version>
         <swagger.core.version>1.5.22</swagger.core.version>
         <mybatis-plus.version>3.4.3</mybatis-plus.version>
+        <druid.version>1.2.5</druid.version>
+        <mysql.connector.version>8.0.23</mysql.connector.version>
     </properties>
 
     <dependencyManagement>
@@ -87,6 +89,24 @@
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <!-- druid 连接池 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <!--mysql 驱动-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.connector.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
