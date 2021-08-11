@@ -22,6 +22,7 @@ package com.ninglz.bamboo.upms.api;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.ninglz.bamboo.upms.domain.log.SysLog;
+import com.ninglz.bamboo.upms.dto.data.SysLogDTO;
 
 
 import java.util.List;
@@ -41,7 +42,7 @@ public interface SysLogServiceI extends IService<SysLog> {
 	 * @param preLogVoList 日志信息
 	 * @return true/false
 	 */
-	Boolean saveBatchLogs(List<PreLogVO> preLogVoList);
+	Boolean saveBatchLogs(List<SysLogDTO> preLogVoList);
 
 	/**
 	 * 分页查询日志

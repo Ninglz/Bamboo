@@ -1,5 +1,6 @@
 package com.ninglz.bamboo.upms.dto.data;
 
+import com.alibaba.cola.dto.DTO;
 import io.swagger.annotations.ApiModel;
 import lombok.Builder;
 import lombok.Data;
@@ -16,7 +17,7 @@ import java.time.LocalDateTime;
 @Data
 @ApiModel(value = "日志查询对象")
 @Builder
-public class SysLogDTO {
+public class SysLogDTO extends DTO {
 
 	/**
 	 * 编号
