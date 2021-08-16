@@ -17,7 +17,7 @@
  *
  */
 
-package com.ninglz.bamboo.upms.log;
+package com.ninglz.bamboo.upms.sysLog;
 
 import com.ninglz.bamboo.common.data.datascope.BambooBaseMapper;
 import com.ninglz.bamboo.upms.domain.log.SysLog;

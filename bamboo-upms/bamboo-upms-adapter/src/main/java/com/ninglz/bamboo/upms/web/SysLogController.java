@@ -3,6 +3,8 @@ package com.ninglz.bamboo.upms.web;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.ninglz.bamboo.common.core.util.StatusResponse;
 import com.ninglz.bamboo.common.security.annotation.Auth;
+import com.ninglz.bamboo.upms.api.SysLogServiceI;
+import com.ninglz.bamboo.upms.dto.SysLogQry;
 import io.swagger.annotations.Api;
 import lombok.AllArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -17,7 +19,7 @@ import java.util.List;
 @Api(value = "log", tags = "日志管理模块")
 public class SysLogController {
 
-    private final SysLogService sysLogService;
+    private final SysLogServiceI sysLogService;
 
     /**
      * 简单分页查询
@@ -26,8 +28,8 @@ public class SysLogController {
      * @return
      */
     @GetMapping("/page")
-    public StatusResponse getLogPage(Page page, SysLogDTO sysLog) {
-        return R.ok(sysLogService.getLogByPage(page, sysLog));
+    public StatusResponse getLogPage(Page page, SysLogQry sysLog) {
+        return StatusResponse.success(sysLogService.getLogByPage(page, sysLog));
     }
 
     /**
@@ -37,8 +39,8 @@ public class SysLogController {
      */
     @DeleteMapping("/{id}")
     @PreAuthorize("@pms.hasPermission('sys_log_del')")
-    public StatusResponseremoveById(@PathVariable Long id) {
-        return R.ok(sysLogService.removeById(id));
+    public StatusResponse removeById(@PathVariable Long id) {
+        return StatusResponse.success(sysLogService.removeById(id));
     }
 
     /**
@@ -49,7 +51,7 @@ public class SysLogController {
     @Auth
     @PostMapping("/save")
     public StatusResponse save(@Valid @RequestBody SysLogDTO sysLog) {
-        return R.ok(sysLogService.saveLog(sysLog));
+        return StatusResponse.success(sysLogService.saveLog(sysLog));
     }
 
     /**
@@ -59,7 +61,7 @@ public class SysLogController {
      */
     @PostMapping("/logs")
     public StatusResponse saveBatchLogs(@RequestBody List<PreLogVO> preLogVoList) {
-        return R.ok(sysLogService.saveBatchLogs(preLogVoList));
+        return StatusResponse.success(sysLogService.saveBatchLogs(preLogVoList));
     }
 
 }

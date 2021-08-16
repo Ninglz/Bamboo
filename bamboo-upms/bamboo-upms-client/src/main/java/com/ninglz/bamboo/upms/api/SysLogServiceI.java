@@ -22,6 +22,7 @@ package com.ninglz.bamboo.upms.api;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.ninglz.bamboo.upms.domain.log.SysLog;
+import com.ninglz.bamboo.upms.dto.SysLogQry;
 import com.ninglz.bamboo.upms.dto.data.SysLogDTO;
 
 
@@ -50,7 +51,7 @@ public interface SysLogServiceI extends IService<SysLog> {
 	 * @param sysLog
 	 * @return
 	 */
-	Page getLogByPage(Page page, SysLogDTO sysLog);
+	Page getLogByPage(Page page, SysLogQry sysLog);
 
 	/**
 	 * 插入日志
