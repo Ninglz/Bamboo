@@ -28,6 +28,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.ninglz.bamboo.upms.api.SysLogServiceI;
 import com.ninglz.bamboo.upms.domain.log.SysLog;
 import com.ninglz.bamboo.upms.domain.log.gateway.SysLogGateway;
+import com.ninglz.bamboo.upms.dto.SysLogAddCmd;
 import com.ninglz.bamboo.upms.dto.SysLogQry;
 import com.ninglz.bamboo.upms.sysLog.executor.SysLogAddCmdExe;
 import com.ninglz.bamboo.upms.sysLog.executor.SysLogUpdateCmdExe;
@@ -50,7 +51,7 @@ import java.util.stream.Collectors;
  * @since 2017-11-20
  */
 @Service
-public class SysLogServiceImpl implements SysLogServiceI {
+public class SysLogServiceImpl extends ServiceImpl<SysLogMapper, SysLog> implements SysLogServiceI {
 
 	@Resource
 	private SysLogAddCmdExe sysLogAddCmdExe;
@@ -67,35 +68,14 @@ public class SysLogServiceImpl implements SysLogServiceI {
 	 * @return true/false
 	 */
 	@Override
-	public Boolean saveBatchLogs(List<PreLogVO> preLogVoList) {
-		List<SysLog> sysLogs = preLogVoList.stream().map(pre -> {
-			SysLog log = new SysLog();
-			log.setType(CommonConstants.STATUS_LOCK);
-			log.setTitle(pre.getInfo());
-			log.setException(pre.getStack());
-			log.setParams(pre.getMessage());
-			log.setCreateTime(LocalDateTime.now());
-			log.setRequestUri(pre.getUrl());
-			log.setCreateBy(pre.getUser());
-			return log;
-		}).collect(Collectors.toList());
-		return this.saveBatch(sysLogs);
+	public Boolean saveBatchLogs(List<SysLogAddCmd> preLogVoList) {
+		return sysLogAddCmdExe.executeBatch(preLogVoList);
+
 	}
 
 	@Override
 	public Page getLogByPage(Page page, SysLogQry sysLog) {
-
-		LambdaQueryWrapper<SysLog> wrapper = Wrappers.lambdaQuery();
-		if (StrUtil.isNotBlank(sysLog.getType())) {
-			wrapper.eq(SysLog::getType, sysLog.getType());
-		}
-
-		if (ArrayUtil.isNotEmpty(sysLog.getCreateTime())) {
-			wrapper.ge(SysLog::getCreateTime, sysLog.getCreateTime()[0]).le(SysLog::getCreateTime,
-					sysLog.getCreateTime()[1]);
-		}
-
-		return baseMapper.selectPage(page, wrapper);
+		return sysLogQryExe.execute(page,sysLog);
 	}
 
 	/**
@@ -105,14 +85,9 @@ public class SysLogServiceImpl implements SysLogServiceI {
 	 */
 	@Override
 	@Transactional(rollbackFor = Exception.class)
-	public Boolean saveLog(SysLogDTO sysLog) {
-		TenantBroker.applyAs(sysLog::getTenantId, tenantId -> {
-			TenantContextHolder.setTenantId(tenantId);
-			SysLog log = new SysLog();
-			BeanUtils.copyProperties(sysLog, log, "createTime");
-			return baseMapper.insert(log);
-		});
-		return Boolean.TRUE;
+	public Boolean saveLog(SysLogAddCmd sysLogAddCmd) {
+		return sysLogAddCmdExe.execute(sysLogAddCmd);
+
 	}
 
 }

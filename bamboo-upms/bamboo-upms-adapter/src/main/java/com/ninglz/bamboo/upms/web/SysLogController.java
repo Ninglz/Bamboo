@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.ninglz.bamboo.common.core.util.StatusResponse;
 import com.ninglz.bamboo.common.security.annotation.Auth;
 import com.ninglz.bamboo.upms.api.SysLogServiceI;
+import com.ninglz.bamboo.upms.dto.SysLogAddCmd;
 import com.ninglz.bamboo.upms.dto.SysLogQry;
 import io.swagger.annotations.Api;
 import lombok.AllArgsConstructor;
@@ -50,7 +51,7 @@ public class SysLogController {
      */
     @Auth
     @PostMapping("/save")
-    public StatusResponse save(@Valid @RequestBody SysLogDTO sysLog) {
+    public StatusResponse save(@Valid @RequestBody SysLogAddCmd sysLog) {
         return StatusResponse.success(sysLogService.saveLog(sysLog));
     }
 
@@ -60,8 +61,8 @@ public class SysLogController {
      * @return success/false
      */
     @PostMapping("/logs")
-    public StatusResponse saveBatchLogs(@RequestBody List<PreLogVO> preLogVoList) {
-        return StatusResponse.success(sysLogService.saveBatchLogs(preLogVoList));
+    public StatusResponse saveBatchLogs(@RequestBody List<SysLogAddCmd> logAddCmdList) {
+        return StatusResponse.success(sysLogService.saveBatchLogs(logAddCmdList));
     }
 
 }
