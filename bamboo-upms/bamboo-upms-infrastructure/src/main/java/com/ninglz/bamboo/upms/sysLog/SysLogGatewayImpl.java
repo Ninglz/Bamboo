@@ -12,4 +12,18 @@ public class SysLogGatewayImpl implements SysLogGateway {
     SysLogMapper logMapper;
 
 
+    @Override
+    public Boolean saveBatchLogs(List<PreLogVO> preLogVoList) {
+        return null;
+    }
+
+    @Override
+    public Page selectPage(Page page, SysLogDTO sysLog) {
+        return null;
+    }
+
+    @Override
+    public Boolean save(SysLogDTO sysLog) {
+        return null;
+    }
 }

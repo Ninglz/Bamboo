@@ -5,10 +5,12 @@ import com.ninglz.bamboo.common.core.constant.CommonConstants;
 import com.ninglz.bamboo.common.data.tenant.TenantBroker;
 import com.ninglz.bamboo.common.data.tenant.TenantContextHolder;
 import com.ninglz.bamboo.upms.domain.log.SysLog;
+import com.ninglz.bamboo.upms.domain.log.gateway.SysLogGateway;
 import com.ninglz.bamboo.upms.dto.SysLogAddCmd;
 import com.ninglz.bamboo.upms.sysLog.SysLogMapper;
 import org.springframework.beans.BeanUtils;
 
+import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -17,6 +19,9 @@ import java.util.stream.Collectors;
  * @author ninglz
  */
 public class SysLogAddCmdExe extends ServiceImpl<SysLogMapper, SysLog> {
+
+    @Resource
+    private SysLogGateway sysLogGateway;
 
     public Boolean execute(SysLogAddCmd sysLogAddCmd) {
         TenantBroker.applyAs(sysLogAddCmd::getTenantId, tenantId -> {

@@ -1,8 +1,10 @@
 package com.ninglz.bamboo.upms.dto;
 
+import com.alibaba.cola.dto.Query;
 import io.swagger.annotations.ApiModel;
 import lombok.Builder;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.validation.constraints.NotBlank;
 import java.time.LocalDateTime;
@@ -13,10 +15,11 @@ import java.time.LocalDateTime;
  * <p>
  * 日志查询传输对象
  */
+@EqualsAndHashCode(callSuper = true)
 @Data
 @ApiModel(value = "日志查询对象")
 @Builder
-public class SysLogQry {
+public class SysLogQry extends Query {
 
 	/**
 	 * 编号
