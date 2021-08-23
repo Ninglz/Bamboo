@@ -37,7 +37,7 @@ import java.util.List;
  * @author lengleng
  * @since 2017-11-20
  */
-public interface SysLogServiceI extends IService<SysLog> {
+public interface SysLogServiceI  {
 
 	/**
 	 * 批量插入前端错误日志

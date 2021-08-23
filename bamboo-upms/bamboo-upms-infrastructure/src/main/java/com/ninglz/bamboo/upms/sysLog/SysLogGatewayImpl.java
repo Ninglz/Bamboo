@@ -1,29 +1,21 @@
 package com.ninglz.bamboo.upms.sysLog;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.ninglz.bamboo.upms.domain.log.SysLog;
 import com.ninglz.bamboo.upms.domain.log.gateway.SysLogGateway;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-public class SysLogGatewayImpl implements SysLogGateway {
+@Slf4j
+@Component
+public class SysLogGatewayImpl extends ServiceImpl<SysLogMapper, SysLog>  implements SysLogGateway {
 
-    @Autowired
-    SysLogMapper logMapper;
+//    @Autowired
+//    SysLogMapper logMapper;
 
 
-    @Override
-    public Boolean saveBatchLogs(List<PreLogVO> preLogVoList) {
-        return null;
-    }
-
-    @Override
-    public Page selectPage(Page page, SysLogDTO sysLog) {
-        return null;
-    }
-
-    @Override
-    public Boolean save(SysLogDTO sysLog) {
-        return null;
-    }
 }

@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 /**
  * @author ninglz
  */
-public class SysLogAddCmdExe extends ServiceImpl<SysLogMapper, SysLog> {
+public class SysLogAddCmdExe  {
 
     @Resource
     private SysLogGateway sysLogGateway;
@@ -28,7 +28,7 @@ public class SysLogAddCmdExe extends ServiceImpl<SysLogMapper, SysLog> {
             TenantContextHolder.setTenantId(tenantId);
             SysLog log = new SysLog();
             BeanUtils.copyProperties(sysLogAddCmd, log, "createTime");
-            return baseMapper.insert(log);
+            return sysLogGateway.save(log);
         });
         return Boolean.TRUE;
     }
@@ -41,6 +41,6 @@ public class SysLogAddCmdExe extends ServiceImpl<SysLogMapper, SysLog> {
             log.setCreateTime(LocalDateTime.now());
             return log;
         }).collect(Collectors.toList());
-        return this.saveBatch(sysLogs);
+        return sysLogGateway.saveBatch(sysLogs);
     }
 }

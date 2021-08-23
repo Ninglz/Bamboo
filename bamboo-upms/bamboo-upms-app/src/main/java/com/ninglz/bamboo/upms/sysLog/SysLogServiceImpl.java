@@ -51,7 +51,7 @@ import java.util.stream.Collectors;
  * @since 2017-11-20
  */
 @Service
-public class SysLogServiceImpl extends ServiceImpl<SysLogMapper, SysLog> implements SysLogServiceI {
+public class SysLogServiceImpl implements SysLogServiceI {
 
 	@Resource
 	private SysLogAddCmdExe sysLogAddCmdExe;
@@ -80,7 +80,7 @@ public class SysLogServiceImpl extends ServiceImpl<SysLogMapper, SysLog> impleme
 
 	/**
 	 * 插入日志
-	 * @param sysLog 日志对象
+	 * @param sysLogAddCmd 日志对象
 	 * @return true/false
 	 */
 	@Override

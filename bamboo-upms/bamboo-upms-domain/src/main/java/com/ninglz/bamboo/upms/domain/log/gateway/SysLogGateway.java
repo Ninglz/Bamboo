@@ -1,31 +1,13 @@
 package com.ninglz.bamboo.upms.domain.log.gateway;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.ninglz.bamboo.upms.domain.log.SysLog;
 
 import java.util.List;
 
-public interface SysLogGateway {
+public interface SysLogGateway extends IService<SysLog> {
 
-    /**
-     * 批量插入前端错误日志
-     * @param preLogVoList 日志信息
-     * @return true/false
-     */
-    Boolean saveBatchLogs(List<PreLogVO> preLogVoList);
-
-    /**
-     * 分页查询日志
-     * @param page
-     * @param sysLog
-     * @return
-     */
-    Page selectPage(Page page, SysLogDTO sysLog);
-
-    /**
-     * 插入日志
-     * @param sysLog 日志对象
-     * @return true/false
-     */
-    Boolean save(SysLogDTO sysLog);
 
 }
