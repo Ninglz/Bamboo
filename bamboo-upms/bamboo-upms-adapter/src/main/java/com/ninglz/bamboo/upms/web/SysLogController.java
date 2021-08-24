@@ -41,7 +41,7 @@ public class SysLogController {
     @DeleteMapping("/{id}")
     @PreAuthorize("@pms.hasPermission('sys_log_del')")
     public StatusResponse removeById(@PathVariable Long id) {
-        return StatusResponse.success(sysLogService.removeById(id));
+        return StatusResponse.success(sysLogService.remove(id));
     }
 
     /**
@@ -57,7 +57,7 @@ public class SysLogController {
 
     /**
      * 批量插入前端异常日志
-     * @param preLogVoList 日志实体
+     * @param logAddCmdList 日志实体
      * @return success/false
      */
     @PostMapping("/logs")

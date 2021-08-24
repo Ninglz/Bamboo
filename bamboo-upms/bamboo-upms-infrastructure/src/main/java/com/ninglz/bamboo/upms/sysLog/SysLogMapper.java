@@ -32,6 +32,6 @@ import org.apache.ibatis.annotations.Mapper;
  * @since 2017-11-20
  */
 @Mapper
-public interface SysLogMapper extends BambooBaseMapper<SysLog> {
+public interface SysLogMapper extends BambooBaseMapper<SysLogDO> {
 
 }

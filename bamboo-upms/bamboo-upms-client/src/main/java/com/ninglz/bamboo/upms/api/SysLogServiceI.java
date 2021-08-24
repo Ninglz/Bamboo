@@ -27,6 +27,7 @@ import com.ninglz.bamboo.upms.dto.SysLogQry;
 import com.ninglz.bamboo.upms.dto.data.SysLogDTO;
 
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -60,5 +61,12 @@ public interface SysLogServiceI  {
 	 * @return true/false
 	 */
 	Boolean saveLog(SysLogAddCmd sysLog);
+
+	/**
+	 * 删除日志
+	 * @param id
+	 * @return true/false
+	 */
+	Boolean remove(Serializable id);
 
 }

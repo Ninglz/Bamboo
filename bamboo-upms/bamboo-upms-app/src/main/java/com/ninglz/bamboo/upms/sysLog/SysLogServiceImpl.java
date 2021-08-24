@@ -19,28 +19,20 @@
 
 package com.ninglz.bamboo.upms.sysLog;
 
-import cn.hutool.core.util.ArrayUtil;
-import cn.hutool.core.util.StrUtil;
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.ninglz.bamboo.upms.api.SysLogServiceI;
-import com.ninglz.bamboo.upms.domain.log.SysLog;
 import com.ninglz.bamboo.upms.domain.log.gateway.SysLogGateway;
 import com.ninglz.bamboo.upms.dto.SysLogAddCmd;
 import com.ninglz.bamboo.upms.dto.SysLogQry;
 import com.ninglz.bamboo.upms.sysLog.executor.SysLogAddCmdExe;
 import com.ninglz.bamboo.upms.sysLog.executor.SysLogUpdateCmdExe;
 import com.ninglz.bamboo.upms.sysLog.executor.query.SysLogQryExe;
-import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
-import java.time.LocalDateTime;
+import java.io.Serializable;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * <p>
@@ -90,4 +82,8 @@ public class SysLogServiceImpl implements SysLogServiceI {
 
 	}
 
+	@Override
+	public Boolean remove(Serializable id) {
+		return sysLogGateway.remove(id);
+	}
 }
