@@ -1,6 +1,6 @@
-package com.ninglz.bamboo.upms.domain.log.gateway;
+package com.ninglz.bamboo.upms.domain.sysLog.gateway;
 
-import com.ninglz.bamboo.upms.domain.log.SysLog;
+import com.ninglz.bamboo.upms.domain.sysLog.SysLog;
 
 import java.io.Serializable;
 import java.util.List;
@@ -32,4 +32,6 @@ public interface SysLogGateway {
      * @return boolean
      */
     boolean remove(Serializable id);
+
+//    Page selectPage(Page page, SysLogQry wrapper);
 }

@@ -1,14 +1,14 @@
 package com.ninglz.bamboo.upms.sysLog.executor;
 
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.ninglz.bamboo.common.core.constant.CommonConstants;
 import com.ninglz.bamboo.common.data.tenant.TenantBroker;
 import com.ninglz.bamboo.common.data.tenant.TenantContextHolder;
-import com.ninglz.bamboo.upms.domain.log.SysLog;
-import com.ninglz.bamboo.upms.domain.log.gateway.SysLogGateway;
+import com.ninglz.bamboo.upms.domain.sysLog.SysLog;
+import com.ninglz.bamboo.upms.domain.sysLog.gateway.SysLogGateway;
 import com.ninglz.bamboo.upms.dto.SysLogAddCmd;
-import com.ninglz.bamboo.upms.sysLog.SysLogMapper;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.time.LocalDateTime;
@@ -18,6 +18,8 @@ import java.util.stream.Collectors;
 /**
  * @author ninglz
  */
+@Slf4j
+@Component
 public class SysLogAddCmdExe  {
 
     @Resource

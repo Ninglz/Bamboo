@@ -1,6 +1,6 @@
 package com.ninglz.bamboo.upms.sysLog;
 
-import com.ninglz.bamboo.upms.domain.log.SysLog;
+import com.ninglz.bamboo.upms.domain.sysLog.SysLog;
 
 public class SysLogConvertor {
 

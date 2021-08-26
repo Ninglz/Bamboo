@@ -17,14 +17,8 @@
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-extension</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.ninglz</groupId>
-            <artifactId>bamboo-upms-infrastructure</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.ninglz</groupId>
-            <artifactId>bamboo-upms-infrastructure</artifactId>
-        </dependency>
+
+
     </dependencies>
 
 </project>

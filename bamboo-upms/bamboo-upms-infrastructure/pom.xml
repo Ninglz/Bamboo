@@ -36,7 +36,6 @@
         <dependency>
             <groupId>com.ninglz</groupId>
             <artifactId>bamboo-common-data</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
 
     </dependencies>

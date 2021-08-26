@@ -1,7 +1,6 @@
 package com.ninglz.bamboo.upms;
 
 import com.ninglz.bamboo.commoon.knife.annotation.EnableBambooKnife;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -12,7 +11,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @author Frank Zhang
  */
 @SpringBootApplication(scanBasePackages = {"com.ninglz.bamboo","com.alibaba.cola"})
-@MapperScan("com.ninglz.bamboo.upms.customer")
 @EnableBambooKnife
 @EnableDiscoveryClient
 public class UpmsApplication {

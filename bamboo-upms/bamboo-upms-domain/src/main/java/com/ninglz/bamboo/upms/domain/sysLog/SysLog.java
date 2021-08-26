@@ -17,7 +17,7 @@
  *
  */
 
-package com.ninglz.bamboo.upms.domain.log;
+package com.ninglz.bamboo.upms.domain.sysLog;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

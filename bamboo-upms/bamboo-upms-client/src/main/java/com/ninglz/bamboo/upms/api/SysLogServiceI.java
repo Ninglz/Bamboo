@@ -20,11 +20,8 @@
 package com.ninglz.bamboo.upms.api;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.baomidou.mybatisplus.extension.service.IService;
-import com.ninglz.bamboo.upms.domain.log.SysLog;
 import com.ninglz.bamboo.upms.dto.SysLogAddCmd;
 import com.ninglz.bamboo.upms.dto.SysLogQry;
-import com.ninglz.bamboo.upms.dto.data.SysLogDTO;
 
 
 import java.io.Serializable;

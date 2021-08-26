@@ -21,7 +21,7 @@ package com.ninglz.bamboo.upms.sysLog;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.ninglz.bamboo.upms.api.SysLogServiceI;
-import com.ninglz.bamboo.upms.domain.log.gateway.SysLogGateway;
+import com.ninglz.bamboo.upms.domain.sysLog.gateway.SysLogGateway;
 import com.ninglz.bamboo.upms.dto.SysLogAddCmd;
 import com.ninglz.bamboo.upms.dto.SysLogQry;
 import com.ninglz.bamboo.upms.sysLog.executor.SysLogAddCmdExe;

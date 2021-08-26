@@ -24,6 +24,17 @@
             <groupId>com.ninglz</groupId>
             <artifactId>bamboo-common-knife</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.ninglz</groupId>
+            <artifactId>bamboo-common-data</artifactId>
+        </dependency>
+
+        <!-- druid 连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <scope>provided</scope>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
