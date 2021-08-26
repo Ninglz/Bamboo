@@ -1,15 +1,16 @@
 package com.ninglz.bamboo.upms.domain.log.gateway;
 
+import com.ninglz.bamboo.common.data.datascope.BambooBaseGateway;
 import com.ninglz.bamboo.upms.domain.log.SysLog;
 
 import java.io.Serializable;
 import java.util.List;
 
 /**
- * @description: SysLog网关
+ * SysLog网关
  * @author ninglz
  */
-public interface SysLogGateway {
+public interface SysLogGateway{
 
 
     /**

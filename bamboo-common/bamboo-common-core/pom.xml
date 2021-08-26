@@ -20,7 +20,7 @@
             <artifactId>spring-webmvc</artifactId>
             <scope>provided</scope>
         </dependency>
-        <!--server-api-->
+        <!--server-api 解决 IntelliJ 找不到Filter的问题-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>

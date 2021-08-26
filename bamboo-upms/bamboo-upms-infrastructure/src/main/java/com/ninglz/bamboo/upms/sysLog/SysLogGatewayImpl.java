@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @description: SysLog网关实现
+ * SysLog网关实现
  * @author ninglz
  */
 @Slf4j
@@ -46,5 +46,6 @@ public class SysLogGatewayImpl implements SysLogGateway {
     public boolean remove(Serializable id) {
         return SqlHelper.retBool(logMapper.deleteById(id));
     }
+
 
 }
