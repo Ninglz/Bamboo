@@ -13,6 +13,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <spring-boot.version>2.5.2</spring-boot.version>
+        <spring-boot-admin.version>2.4.2</spring-boot-admin.version>
         <spring-cloud.version>2020.0.3</spring-cloud.version>
         <spring-cloud-alibaba.version>2021.1</spring-cloud-alibaba.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -25,6 +26,7 @@
         <captcha.version>1.2.9</captcha.version>
         <swagger.core.version>1.5.22</swagger.core.version>
 
+
     </properties>
 
     <modules>
@@ -33,6 +35,7 @@
         <module>bamboo-common</module>
         <module>bamboo-gateway</module>
         <module>bamboo-upms</module>
+        <module>bamboo-extension</module>
     </modules>
 
     <dependencies>
@@ -84,6 +87,13 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
+        </dependency>
+
+        <!--fastjson-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.75</version>
         </dependency>
 
         <dependency>

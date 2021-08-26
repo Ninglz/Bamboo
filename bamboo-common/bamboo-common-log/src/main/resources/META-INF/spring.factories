@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.ninglz.bamboo.common.log.config.LogAutoConfiguration

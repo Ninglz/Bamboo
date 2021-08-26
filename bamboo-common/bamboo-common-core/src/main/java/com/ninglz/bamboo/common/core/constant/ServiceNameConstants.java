@@ -33,7 +33,7 @@ public interface ServiceNameConstants {
 	/**
 	 * UMPS模块
 	 */
-	String UPMS_SERVICE = "pigx-upms-biz";
+	String UPMS_SERVICE = "bamboo-upms";
 
 	/**
 	 * 分布式事务协调服务

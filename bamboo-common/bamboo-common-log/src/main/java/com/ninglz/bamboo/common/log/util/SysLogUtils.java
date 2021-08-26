@@ -24,9 +24,6 @@ import cn.hutool.extra.servlet.ServletUtil;
 import cn.hutool.http.HttpUtil;
 import com.ninglz.bamboo.upms.dto.data.SysLogDTO;
 import lombok.experimental.UtilityClass;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -44,7 +41,7 @@ public class SysLogUtils {
 	public SysLogDTO getSysLog() {
 		HttpServletRequest request = ((ServletRequestAttributes) Objects
 				.requireNonNull(RequestContextHolder.getRequestAttributes())).getRequest();
-		return getSysLog(request,Objects.requireNonNull(getUsername()));
+		return getSysLog(request,Objects.requireNonNull("s"));
 	}
 
 	public SysLogDTO getSysLog(HttpServletRequest request, String username) {
@@ -55,7 +52,7 @@ public class SysLogUtils {
 				.method(request.getMethod())
 				.userAgent(request.getHeader("user-agent"))
 				.params(HttpUtil.toParams(request.getParameterMap()))
-				.serviceId(getClientId())
+//				.serviceId(getClientId())
 				.build();
 	}
 
@@ -63,25 +60,25 @@ public class SysLogUtils {
 	 * 获取客户端
 	 * @return clientId
 	 */
-	private String getClientId() {
-		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-		if (authentication instanceof OAuth2Authentication) {
-			OAuth2Authentication auth2Authentication = (OAuth2Authentication) authentication;
-			return auth2Authentication.getOAuth2Request().getClientId();
-		}
-		return null;
-	}
+//	private String getClientId() {
+//		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+//		if (authentication instanceof OAuth2Authentication) {
+//			OAuth2Authentication auth2Authentication = (OAuth2Authentication) authentication;
+//			return auth2Authentication.getOAuth2Request().getClientId();
+//		}
+//		return null;
+//	}
 
 	/**
 	 * 获取用户名称
 	 * @return username
 	 */
-	private String getUsername() {
-		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-		if (authentication == null) {
-			return null;
-		}
-		return authentication.getName();
-	}
+//	private String getUsername() {
+//		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+//		if (authentication == null) {
+//			return null;
+//		}
+//		return authentication.getName();
+//	}
 
 }

@@ -39,7 +39,7 @@ public interface RemoteLogService {
 	 * 保存日志
 	 * @param sysLog 日志实体
 	 * @param from 是否内部调用
-	 * @return succes、false
+	 * @return cmd
 	 */
 	@PostMapping("/log/save")
 	StatusResponse saveLog(@RequestBody SysLogDTO sysLog, @RequestHeader(SecurityConstants.FROM) String from);

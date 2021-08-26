@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @description: SysLog网关实现
+ * SysLog网关实现
  * @author ninglz
  */
 @Slf4j
@@ -60,4 +60,5 @@ public class SysLogGatewayImpl implements SysLogGateway {
 //        }
 //        return logMapper.selectPage(page, wrapper);
 //    }
+
 }

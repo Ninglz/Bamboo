@@ -1,0 +1,32 @@
+server:
+  port: 4000
+
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_HOST:bamboo-register}:${NACOS_PORT:11151}
+        namespace: ${spring.profiles.active}
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        file-extension: yml
+        shared-configs:
+          - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+
+  boot:
+    admin:
+      ui:
+        title: 'bamboo 服务状态监控'
+        brand: 'bamboo 服务状态监控'
+        external-views:
+          - label: "SQL监控"
+            url: /druid/sql.html
+            order: 2000
+            iframe: true
+  # 安全配置
+  security:
+    user:
+      name: ENC(rZHA4LW5hHmhLAAzJoFNag==)     # pigx
+      password: ENC(bjeyh+Aeii3kHXkoo00ZUw==) # pigx
