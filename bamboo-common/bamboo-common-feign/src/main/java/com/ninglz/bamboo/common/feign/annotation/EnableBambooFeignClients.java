@@ -1,7 +1,8 @@
 package com.ninglz.bamboo.common.feign.annotation;
 
+import org.springframework.cloud.openfeign.BambooFeignClientsRegistrar;
 import org.springframework.cloud.openfeign.EnableFeignClients;
-import org.springframework.cloud.openfeign.PigxFeignClientsRegistrar;
+import org.springframework.cloud.openfeign.FeignClientsConfiguration;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.*;
@@ -15,8 +16,9 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @EnableFeignClients
-@Import(PigxFeignClientsRegistrar.class)
+@Import(BambooFeignClientsRegistrar.class)
 public @interface EnableBambooFeignClients {
+
 
 	/**
 	 * Alias for the {@link #basePackages()} attribute. Allows for more concise annotation
@@ -35,7 +37,7 @@ public @interface EnableBambooFeignClients {
 	 * package names.
 	 * @return the array of 'basePackages'.
 	 */
-	String[] basePackages() default { "com.ninglz.bamboo" };
+	String[] basePackages() default {"com.ninglz.bamboo"};
 
 	/**
 	 * Type-safe alternative to {@link #basePackages()} for specifying the packages to
@@ -53,13 +55,14 @@ public @interface EnableBambooFeignClients {
 	 * {@link feign.codec.Decoder}, {@link feign.codec.Encoder}, {@link feign.Contract}.
 	 *
 	 * @see FeignClientsConfiguration for the defaults
+	 * @return list of default configurations
 	 */
 	Class<?>[] defaultConfiguration() default {};
 
 	/**
 	 * List of classes annotated with @FeignClient. If not empty, disables classpath
 	 * scanning.
-	 * @return
+	 * @return list of FeignClient classes
 	 */
 	Class<?>[] clients() default {};
 

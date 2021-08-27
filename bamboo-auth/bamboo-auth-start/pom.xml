@@ -8,7 +8,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>bamboo-auth</artifactId>
+    <artifactId>bamboo-auth-start</artifactId>
     <packaging>jar</packaging>
     <name>bamboo-auth-start</name>
 

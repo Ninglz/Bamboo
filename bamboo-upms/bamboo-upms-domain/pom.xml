@@ -18,7 +18,6 @@
             <artifactId>mybatis-plus-extension</artifactId>
         </dependency>
 
-
     </dependencies>
 
 </project>

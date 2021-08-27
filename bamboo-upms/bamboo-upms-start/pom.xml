@@ -7,7 +7,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>bamboo-upms</artifactId>
+    <artifactId>bamboo-upms-start</artifactId>
     <packaging>jar</packaging>
 
     <properties>
@@ -16,10 +16,6 @@
 
     <dependencies>
 
-        <dependency>
-            <groupId>com.ninglz</groupId>
-            <artifactId>bamboo-upms-adapter</artifactId>
-        </dependency>
         <dependency>
             <groupId>com.ninglz</groupId>
             <artifactId>bamboo-common-knife</artifactId>
@@ -39,6 +35,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ninglz</groupId>
+            <artifactId>bamboo-common-feign</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
 <!--        <dependency>-->
