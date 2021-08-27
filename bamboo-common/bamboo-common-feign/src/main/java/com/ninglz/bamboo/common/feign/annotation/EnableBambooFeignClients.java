@@ -1,6 +1,6 @@
 package com.ninglz.bamboo.common.feign.annotation;
 
-import org.springframework.cloud.openfeign.BambooFeignClientsRegistrar;
+import com.ninglz.bamboo.common.feign.BambooFeignClientsRegistrar;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.cloud.openfeign.FeignClientsConfiguration;
 import org.springframework.context.annotation.Import;

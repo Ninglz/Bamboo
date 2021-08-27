@@ -1,6 +1,5 @@
-package org.springframework.cloud.openfeign;
+package com.ninglz.bamboo.common.feign;
 
-import com.ninglz.bamboo.common.feign.BambooFeignAutoConfiguration;
 import com.ninglz.bamboo.common.feign.annotation.EnableBambooFeignClients;
 import feign.Request;
 import lombok.Getter;
@@ -14,6 +13,9 @@ import org.springframework.beans.factory.support.AbstractBeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.support.BeanDefinitionReaderUtils;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.cloud.openfeign.FeignClientFactoryBean;
+import org.springframework.cloud.openfeign.OptionsFactoryBean;
 import org.springframework.context.EnvironmentAware;
 import org.springframework.context.ResourceLoaderAware;
 import org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider;
@@ -133,7 +135,7 @@ public class BambooFeignClientsRegistrar  implements
 	}
 
 	private void registerDefaultConfiguration(AnnotationMetadata metadata, BeanDefinitionRegistry registry) {
-		Map<String, Object> defaultAttrs = metadata.getAnnotationAttributes(EnableFeignClients.class.getName(), true);
+		Map<String, Object> defaultAttrs = metadata.getAnnotationAttributes(EnableBambooFeignClients.class.getName(), true);
 
 		if (defaultAttrs != null && defaultAttrs.containsKey("defaultConfiguration")) {
 			String name;
@@ -174,14 +176,11 @@ public class BambooFeignClientsRegistrar  implements
 		// 如果 spring.factories 里为空
 		for (String className : feignClients) {
 			try {
-				// 如果已经存在该 bean，不做处理
-				if (registry.containsBeanDefinition(className)) {
-					continue;
-				}
 				Class<?> clazz = beanClassLoader.loadClass(className);
-				candidateComponents.add(new AnnotatedGenericBeanDefinition(clazz));
-
-
+				AnnotatedGenericBeanDefinition annotatedGenericBeanDefinition = new AnnotatedGenericBeanDefinition(clazz);
+				if(!candidateComponents.contains(annotatedGenericBeanDefinition)){
+					candidateComponents.add(annotatedGenericBeanDefinition);
+				}
 			}catch (ClassNotFoundException e) {
 				e.printStackTrace();
 			}
@@ -190,6 +189,10 @@ public class BambooFeignClientsRegistrar  implements
 
 
 		for (BeanDefinition candidateComponent : candidateComponents) {
+			// 如果已经存在该 bean，不做处理
+			if (registry.containsBeanDefinition(candidateComponent.getBeanClassName())) {
+				continue;
+			}
 			if (candidateComponent instanceof AnnotatedBeanDefinition) {
 				// verify annotated class is an interface
 				AnnotatedBeanDefinition beanDefinition = (AnnotatedBeanDefinition) candidateComponent;
@@ -339,7 +342,7 @@ public class BambooFeignClientsRegistrar  implements
 
 	protected Set<String> getBasePackages(AnnotationMetadata importingClassMetadata) {
 		Map<String, Object> attributes = importingClassMetadata
-				.getAnnotationAttributes(EnableFeignClients.class.getCanonicalName());
+				.getAnnotationAttributes(EnableBambooFeignClients.class.getCanonicalName());
 
 		Set<String> basePackages = new HashSet<>();
 		for (String pkg : (String[]) attributes.get("value")) {
@@ -411,8 +414,12 @@ public class BambooFeignClientsRegistrar  implements
 		BeanDefinitionBuilder builder = BeanDefinitionBuilder.genericBeanDefinition(FeignClientSpecification.class);
 		builder.addConstructorArgValue(name);
 		builder.addConstructorArgValue(configuration);
-		registry.registerBeanDefinition(name + "." + FeignClientSpecification.class.getSimpleName(),
-				builder.getBeanDefinition());
+		String className = name + "." + FeignClientSpecification.class.getSimpleName();
+		if (!registry.containsBeanDefinition(className)) {
+			registry.registerBeanDefinition(name + "." + FeignClientSpecification.class.getSimpleName(),
+					builder.getBeanDefinition());
+		}
+
 	}
 
 	@Override

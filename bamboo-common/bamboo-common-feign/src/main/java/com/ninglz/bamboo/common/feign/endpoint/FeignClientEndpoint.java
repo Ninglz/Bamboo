@@ -41,6 +41,9 @@ public class FeignClientEndpoint implements SmartInitializingSingleton {
 		return clientList;
 	}
 
+	/**
+	 * bean初始化后，后置处理
+	 */
 	@Override
 	public void afterSingletonsInstantiated() {
 		clientList.addAll(getClientList(context));
