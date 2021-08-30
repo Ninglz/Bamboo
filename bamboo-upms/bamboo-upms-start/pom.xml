@@ -20,19 +20,15 @@
             <artifactId>bamboo-upms-adapter</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>mysql</groupId>-->
+<!--            <artifactId>mysql-connector-java</artifactId>-->
+<!--        </dependency>-->
 
 
         <dependency>
             <groupId>com.ninglz</groupId>
             <artifactId>bamboo-common-knife</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.ninglz</groupId>
-            <artifactId>bamboo-common-data</artifactId>
         </dependency>
 
         <!-- druid 连接池 -->
@@ -45,29 +41,6 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.ninglz</groupId>
-            <artifactId>bamboo-common-feign</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-
-<!--        <dependency>-->
-<!--            <groupId>org.mybatis.spring.boot</groupId>-->
-<!--            <artifactId>mybatis-spring-boot-starter</artifactId>-->
-<!--        </dependency>-->
-        <!--mybatis plus extension,包含了mybatis plus core-->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-extension</artifactId>
-            <version>${mybatis-plus.version}</version>
-        </dependency>
-        <!--mybatis-->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>${mybatis-plus.version}</version>
         </dependency>
 
         <dependency>

@@ -30,3 +30,17 @@ spring:
     user:
       name: ENC(rZHA4LW5hHmhLAAzJoFNag==)     # pigx
       password: ENC(bjeyh+Aeii3kHXkoo00ZUw==) # pigx
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS  #显示详细信息
+
+# druid 监控的服务
+monitor:
+  applications:
+    - bamboo-upms-start

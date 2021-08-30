@@ -1,7 +1,9 @@
 package com.ninglz.bamboo.common.feign.annotation;
 
+import com.ninglz.bamboo.common.feign.BambooFeignClientsRegistrar;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.cloud.openfeign.FeignClientsConfiguration;
+import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.*;
 
@@ -14,7 +16,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @EnableFeignClients
-//@Import(BambooFeignClientsRegistrar.class)
+@Import(BambooFeignClientsRegistrar.class)
 public @interface EnableBambooFeignClients {
 
 
