@@ -2,10 +2,7 @@ package com.ninglz.bamboo.upms.dto;
 
 import com.alibaba.cola.dto.Command;
 import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 
 import javax.validation.constraints.NotBlank;
 import java.time.LocalDateTime;
@@ -20,6 +17,8 @@ import java.time.LocalDateTime;
 @ApiModel(value = "新增日志对象")
 @Builder
 @EqualsAndHashCode(callSuper = true)
+@NoArgsConstructor
+@AllArgsConstructor
 public class SysLogAddCmd extends Command {
 
 	/**

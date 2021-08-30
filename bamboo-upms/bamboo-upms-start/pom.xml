@@ -21,6 +21,12 @@
         </dependency>
 
         <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+
+        <dependency>
             <groupId>com.ninglz</groupId>
             <artifactId>bamboo-common-knife</artifactId>
         </dependency>

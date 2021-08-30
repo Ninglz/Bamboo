@@ -22,7 +22,7 @@ package com.ninglz.bamboo.upms.api;
 import com.ninglz.bamboo.common.core.constant.SecurityConstants;
 import com.ninglz.bamboo.common.core.constant.ServiceNameConstants;
 import com.ninglz.bamboo.common.core.util.StatusResponse;
-import com.ninglz.bamboo.upms.dto.data.SysLogDTO;
+import com.ninglz.bamboo.upms.dto.SysLogAddCmd;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -37,11 +37,11 @@ public interface RemoteLogService {
 
 	/**
 	 * 保存日志
-	 * @param sysLog 日志实体
+	 * @param sysLogAddCmd 日志新增命令
 	 * @param from 是否内部调用
 	 * @return cmd
 	 */
 	@PostMapping("/log/save")
-	StatusResponse saveLog(@RequestBody SysLogDTO sysLog, @RequestHeader(SecurityConstants.FROM) String from);
+	StatusResponse saveLog(@RequestBody SysLogAddCmd sysLogAddCmd, @RequestHeader(SecurityConstants.FROM) String from);
 
 }

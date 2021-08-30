@@ -21,7 +21,7 @@ package com.ninglz.bamboo.common.log.event;
 
 import com.ninglz.bamboo.common.core.constant.SecurityConstants;
 import com.ninglz.bamboo.upms.api.RemoteLogService;
-import com.ninglz.bamboo.upms.dto.data.SysLogDTO;
+import com.ninglz.bamboo.upms.dto.SysLogAddCmd;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.event.EventListener;
@@ -41,8 +41,8 @@ public class SysLogListener {
 	@Order
 	@EventListener(SysLogEvent.class)
 	public void saveSysLog(SysLogEvent event) {
-		SysLogDTO sysLog = event.getSysLog();
-		remoteLogService.saveLog(sysLog, SecurityConstants.FROM_IN);
+		SysLogAddCmd sysLogAddCmd = event.getSysLog();
+		remoteLogService.saveLog(sysLogAddCmd, SecurityConstants.FROM_IN);
 	}
 
 }

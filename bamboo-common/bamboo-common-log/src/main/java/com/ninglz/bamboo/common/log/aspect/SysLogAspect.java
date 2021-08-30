@@ -24,7 +24,7 @@ import com.ninglz.bamboo.common.log.annotation.SysLog;
 import com.ninglz.bamboo.common.log.event.SysLogEvent;
 import com.ninglz.bamboo.common.log.util.LogTypeEnum;
 import com.ninglz.bamboo.common.log.util.SysLogUtils;
-import com.ninglz.bamboo.upms.dto.data.SysLogDTO;
+import com.ninglz.bamboo.upms.dto.SysLogAddCmd;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -54,8 +54,8 @@ public class SysLogAspect {
 		String strMethodName = point.getSignature().getName();
 		log.debug("[类名]:{},[方法]:{}", strClassName, strMethodName);
 
-		SysLogDTO logDTO = SysLogUtils.getSysLog();
-		logDTO.setTitle(sysLog.value());
+		SysLogAddCmd sysLogAddCmd = SysLogUtils.getSysLog();
+		sysLogAddCmd.setTitle(sysLog.value());
 		// 发送异步日志事件
 		Long startTime = System.currentTimeMillis();
 		Object obj;
@@ -63,16 +63,16 @@ public class SysLogAspect {
 			obj = point.proceed();
 		}
 		catch (Exception e) {
-			logDTO.setType(LogTypeEnum.ERROR.getType());
-			logDTO.setException(e.getMessage());
+			sysLogAddCmd.setType(LogTypeEnum.ERROR.getType());
+			sysLogAddCmd.setException(e.getMessage());
 			throw e;
 		}
 		finally {
 			Long endTime = System.currentTimeMillis();
-			logDTO.setTime(endTime - startTime);
+			sysLogAddCmd.setTime(endTime - startTime);
 			log.error("tenantId:{}",tenantKeyStrResolver.key());
 //			logDTO.setTenantId(Integer.parseInt(tenantKeyStrResolver.key()));
-			publisher.publishEvent(new SysLogEvent(logDTO));
+			publisher.publishEvent(new SysLogEvent(sysLogAddCmd));
 		}
 		return obj;
 	}

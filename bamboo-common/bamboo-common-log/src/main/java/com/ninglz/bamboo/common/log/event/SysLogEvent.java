@@ -19,6 +19,7 @@
 
 package com.ninglz.bamboo.common.log.event;
 
+import com.ninglz.bamboo.upms.dto.SysLogAddCmd;
 import com.ninglz.bamboo.upms.dto.data.SysLogDTO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -30,6 +31,6 @@ import lombok.Getter;
 @AllArgsConstructor
 public class SysLogEvent {
 
-	private final SysLogDTO sysLog;
+	private final SysLogAddCmd sysLog;
 
 }

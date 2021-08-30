@@ -28,12 +28,12 @@ public interface ServiceNameConstants {
 	/**
 	 * 认证中心
 	 */
-	String AUTH_SERVICE = "pigx-auth";
+	String AUTH_SERVICE = "bamboo-auth-start";
 
 	/**
 	 * UMPS模块
 	 */
-	String UPMS_SERVICE = "bamboo-upms";
+	String UPMS_SERVICE = "bamboo-upms-start";
 
 	/**
 	 * 分布式事务协调服务

@@ -1,7 +1,9 @@
 package com.ninglz.bamboo.upms.sysLog;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.ninglz.bamboo.common.data.datascope.BambooBaseDO;
 import io.swagger.annotations.ApiModel;
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -13,8 +15,10 @@ import javax.validation.constraints.NotBlank;
  * @author ninglz
  */
 @EqualsAndHashCode(callSuper = true)
+@Builder
 @Data
 @ApiModel(value = "日志")
+@TableName("sys_log")
 public class SysLogDO extends BambooBaseDO<SysLogDO> {
 
     /**

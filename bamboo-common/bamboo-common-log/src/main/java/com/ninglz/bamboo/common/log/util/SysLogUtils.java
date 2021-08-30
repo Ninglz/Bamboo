@@ -22,6 +22,7 @@ package com.ninglz.bamboo.common.log.util;
 import cn.hutool.core.util.URLUtil;
 import cn.hutool.extra.servlet.ServletUtil;
 import cn.hutool.http.HttpUtil;
+import com.ninglz.bamboo.upms.dto.SysLogAddCmd;
 import com.ninglz.bamboo.upms.dto.data.SysLogDTO;
 import lombok.experimental.UtilityClass;
 import org.springframework.web.context.request.RequestContextHolder;
@@ -38,14 +39,14 @@ import java.util.Objects;
 @UtilityClass
 public class SysLogUtils {
 
-	public SysLogDTO getSysLog() {
+	public SysLogAddCmd getSysLog() {
 		HttpServletRequest request = ((ServletRequestAttributes) Objects
 				.requireNonNull(RequestContextHolder.getRequestAttributes())).getRequest();
 		return getSysLog(request,Objects.requireNonNull("s"));
 	}
 
-	public SysLogDTO getSysLog(HttpServletRequest request, String username) {
-		return SysLogDTO.builder().createBy(username)
+	public SysLogAddCmd getSysLog(HttpServletRequest request, String username) {
+		return SysLogAddCmd.builder().createBy(username)
 				.type(LogTypeEnum.NORMAL.getType())
 				.remoteAddr(ServletUtil.getClientIP(request))
 				.requestUri(URLUtil.getPath(request.getRequestURI()))

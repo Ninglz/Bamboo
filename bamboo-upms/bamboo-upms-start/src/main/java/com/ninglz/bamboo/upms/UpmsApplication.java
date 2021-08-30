@@ -13,7 +13,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication(scanBasePackages = {"com.ninglz.bamboo","com.alibaba.cola"})
 //@EnableBambooKnife
 @EnableDiscoveryClient
-//@EnableFeignClients
 @EnableBambooFeignClients
 public class UpmsApplication {
 

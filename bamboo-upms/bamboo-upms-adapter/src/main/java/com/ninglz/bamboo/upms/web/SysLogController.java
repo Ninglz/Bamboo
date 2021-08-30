@@ -2,6 +2,7 @@ package com.ninglz.bamboo.upms.web;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.ninglz.bamboo.common.core.util.StatusResponse;
+import com.ninglz.bamboo.common.log.annotation.SysLog;
 import com.ninglz.bamboo.upms.api.SysLogServiceI;
 import com.ninglz.bamboo.upms.dto.SysLogAddCmd;
 import com.ninglz.bamboo.upms.dto.SysLogQry;
@@ -31,6 +32,7 @@ public class SysLogController {
      * @return
      */
     @GetMapping("/page")
+    @SysLog("查看日志")
     public StatusResponse getLogPage(Page page, SysLogQry sysLog) {
         return StatusResponse.success(sysLogService.getLogByPage(page, sysLog));
     }

@@ -5,28 +5,24 @@ import com.ninglz.bamboo.upms.domain.sysLog.SysLog;
 public class SysLogConvertor {
 
 
-    public static SysLogDO toDataObject(SysLog userEntity) {
-        SysLogDO sysLogDO = new SysLogDO();
-//        userDO.setId(userEntity.getId());
-//        userDO.setUsername(userEntity.getUsername());
-//        userDO.setPassword(userEntity.getPassword());
-//        userDO.setSalt(userEntity.getSalt());
-//        userDO.setName(userEntity.getName());
-//
-//        // user info
-//        UserInfoDO userInfoDO = new UserInfoDO();
-//        userInfoDO.setPhoneNo(userEntity.getPhoneNo());
-//        userInfoDO.setGender(userEntity.getGender());
-//        userInfoDO.setBirthday(userEntity.getBirthday());
-//        userInfoDO.setDescription(userEntity.getDescription());
-//
-//        userDO.setUserInfoDO(userInfoDO);
+    public static SysLogDO toDataObject(SysLog sysLog) {
+        return SysLogDO.builder().createBy(sysLog.getCreateBy())
+                .exception(sysLog.getException())
+                .method(sysLog.getMethod())
+                .params(sysLog.getParams())
+                .remoteAddr(sysLog.getRemoteAddr())
+                .requestUri(sysLog.getRequestUri())
+                .serviceId(sysLog.getServiceId())
+                .time(sysLog.getTime())
+                .title(sysLog.getTitle())
+                .type(sysLog.getType())
+                .userAgent(sysLog.getUserAgent())
+                .build();
 
-        return sysLogDO;
     }
 
     public static SysLog toEntity(SysLogDO sysLogDO) {
-        SysLog sysLog = new SysLog();
+//        SysLog sysLog = new SysLog();
 //        userEntity.setId(userDO.getId());
 //        userEntity.setUsername(userDO.getUsername());
 //        userEntity.setPassword(userDO.getPassword());
@@ -39,7 +35,7 @@ public class SysLogConvertor {
 //            userEntity.setDescription(userDO.getUserInfoDO().getDescription());
 //        }
 
-        return sysLog;
+        return null;
     }
 
 //    public static void mergeDataObject(UserEntity userEntity, UserDO userDO) {
