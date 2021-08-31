@@ -52,7 +52,7 @@ public class SysLogAspect {
 	public Object around(ProceedingJoinPoint point, SysLog sysLog) {
 		String strClassName = point.getTarget().getClass().getName();
 		String strMethodName = point.getSignature().getName();
-		log.debug("[类名]:{},[方法]:{}", strClassName, strMethodName);
+		log.debug("调用: [类名]:{},[方法]:{}", strClassName, strMethodName);
 
 		SysLogAddCmd sysLogAddCmd = SysLogUtils.getSysLog();
 		sysLogAddCmd.setTitle(sysLog.value());
@@ -71,7 +71,7 @@ public class SysLogAspect {
 			Long endTime = System.currentTimeMillis();
 			sysLogAddCmd.setTime(endTime - startTime);
 			log.error("tenantId:{}",tenantKeyStrResolver.key());
-//			logDTO.setTenantId(Integer.parseInt(tenantKeyStrResolver.key()));
+			sysLogAddCmd.setTenantId(Integer.parseInt(tenantKeyStrResolver.key()));
 			publisher.publishEvent(new SysLogEvent(sysLogAddCmd));
 		}
 		return obj;

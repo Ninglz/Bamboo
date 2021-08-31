@@ -11,6 +11,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>bamboo-monitor</module>
+        <module>bamboo-sentinel-dashboard</module>
     </modules>
     <artifactId>bamboo-extension</artifactId>
 
