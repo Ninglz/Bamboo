@@ -29,6 +29,11 @@
             <artifactId>bamboo-common-core</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.ninglz</groupId>
+            <artifactId>bamboo-common-feign</artifactId>
+        </dependency>
+
         <!--监控服务端-->
         <dependency>
             <groupId>de.codecentric</groupId>
@@ -46,6 +51,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <!--web 模块-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <!--nacos 服务发现-->
