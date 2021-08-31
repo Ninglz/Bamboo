@@ -1,24 +1,15 @@
 package com.ninglz.bamboo.upms.sysLog;
 
+import com.ninglz.bamboo.common.core.util.CopyUtiil;
 import com.ninglz.bamboo.upms.domain.sysLog.SysLog;
 
 public class SysLogConvertor {
 
 
     public static SysLogDO toDataObject(SysLog sysLog) {
-        return SysLogDO.builder().createBy(sysLog.getCreateBy())
-                .exception(sysLog.getException())
-                .method(sysLog.getMethod())
-                .params(sysLog.getParams())
-                .remoteAddr(sysLog.getRemoteAddr())
-                .requestUri(sysLog.getRequestUri())
-                .serviceId(sysLog.getServiceId())
-                .time(sysLog.getTime())
-                .title(sysLog.getTitle())
-                .type(sysLog.getType())
-                .userAgent(sysLog.getUserAgent())
-                .build();
-
+        SysLogDO logDO = new SysLogDO();
+        CopyUtiil.copy(sysLog,logDO);
+        return logDO;
     }
 
     public static SysLog toEntity(SysLogDO sysLogDO) {

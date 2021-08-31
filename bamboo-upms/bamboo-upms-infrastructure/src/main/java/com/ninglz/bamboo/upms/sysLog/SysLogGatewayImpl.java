@@ -1,6 +1,8 @@
 package com.ninglz.bamboo.upms.sysLog;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.enums.SqlMethod;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.toolkit.SqlHelper;
 import com.ninglz.bamboo.upms.domain.sysLog.SysLog;
 import com.ninglz.bamboo.upms.domain.sysLog.gateway.SysLogGateway;
@@ -46,19 +48,5 @@ public class SysLogGatewayImpl implements SysLogGateway {
     public boolean remove(Serializable id) {
         return SqlHelper.retBool(logMapper.deleteById(id));
     }
-
-//    @Override
-//    public Page selectPage(Page page, LambdaQueryWrapper<SysLog> wrapper) {
-//        LambdaQueryWrapper<SysLogDO> wrapper = Wrappers.lambdaQuery();
-//        if (StrUtil.isNotBlank(sysLog.getType())) {
-//            wrapper.eq(SysLogDO::getType, sysLog.getType());
-//        }
-//
-//        if (ArrayUtil.isNotEmpty(sysLog.getCreateTime())) {
-//            wrapper.ge(SysLog::getCreateTime, sysLog.getCreateTime()[0]).le(SysLog::getCreateTime,
-//                    sysLog.getCreateTime()[1]);
-//        }
-//        return logMapper.selectPage(page, wrapper);
-//    }
 
 }

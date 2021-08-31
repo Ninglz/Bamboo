@@ -1,6 +1,7 @@
 package com.ninglz.bamboo.upms.sysLog.executor;
 
 import com.ninglz.bamboo.common.core.constant.CommonConstants;
+import com.ninglz.bamboo.common.core.util.CopyUtiil;
 import com.ninglz.bamboo.common.data.tenant.TenantBroker;
 import com.ninglz.bamboo.common.data.tenant.TenantContextHolder;
 import com.ninglz.bamboo.upms.domain.sysLog.SysLog;
@@ -29,7 +30,7 @@ public class SysLogAddCmdExe  {
         TenantBroker.applyAs(sysLogAddCmd::getTenantId, tenantId -> {
             TenantContextHolder.setTenantId(tenantId);
             SysLog log = new SysLog();
-            BeanUtils.copyProperties(sysLogAddCmd, log, "createTime");
+            CopyUtiil.copy(sysLogAddCmd,log);
             return sysLogGateway.save(log);
         });
         return Boolean.TRUE;

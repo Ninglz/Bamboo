@@ -25,7 +25,7 @@
         <springfox.version>3.0.0</springfox.version>
         <captcha.version>1.2.9</captcha.version>
         <swagger.core.version>1.5.22</swagger.core.version>
-
+        <cglib.version>3.3.0</cglib.version>
 
     </properties>
 
@@ -94,6 +94,12 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.75</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.dozer</groupId>
+            <artifactId>dozer</artifactId>
+            <version>5.5.1</version>
         </dependency>
 
         <dependency>

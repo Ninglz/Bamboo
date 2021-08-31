@@ -1,6 +1,9 @@
 package com.ninglz.bamboo.upms.domain.sysLog.gateway;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.ninglz.bamboo.upms.domain.sysLog.SysLog;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -32,5 +35,4 @@ public interface SysLogGateway{
      */
     boolean remove(Serializable id);
 
-//    Page selectPage(Page page, SysLogQry wrapper);
 }
