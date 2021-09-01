@@ -1,5 +1,5 @@
 server:
-  port: 5020
+  port: 11520
   servlet:
     encoding:
       force: true
@@ -8,6 +8,15 @@ server:
     session:
       cookie:
         name: bamboo_sentinel_dashboard_cookie
+
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_HOST:bamboo-register}:${NACOS_PORT:11151}
+        namespace: ${spring.profiles.active}
 
 logging:
   level:

@@ -31,6 +31,11 @@
             <artifactId>bamboo-common-knife</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+
         <!-- druid 连接池 -->
         <dependency>
             <groupId>com.alibaba</groupId>

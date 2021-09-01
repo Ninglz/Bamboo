@@ -23,7 +23,25 @@ spring:
         shared-configs:
           - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
 
-# 数据源
+    sentinel:
+      eager: true
+      filter:
+        url-patterns: /**
+      transport:
+        dashboard: bamboo-sentinel:11520
+        port: 18179
+
+# 对外暴露端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS  #显示详细信息
+
+  # 数据源
   autoconfigure:
     exclude: org.springframework.cloud.gateway.config.GatewayAutoConfiguration,org.springframework.cloud.gateway.config.GatewayClassPathWarningAutoConfiguration
   datasource:
